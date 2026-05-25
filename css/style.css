@@ -1,0 +1,214 @@
+:root {
+  --primary-bg: #f7f1e8;
+  --secondary-bg: #efe6d7;
+  --accent: #ff0000;
+
+  --primary-text: #6b0f1a;
+  --secondary-text: #fff;
+}
+
+/* #FFF9F2 */
+
+/* line-height: 1.2px;
+line-height: 1.3px;
+line-height: 1.4px;
+line-height: 1.5px;
+line-height: 1.6px;
+line-height: 1.7px;
+line-height: 1.8px;
+line-height: 1.9px;
+line-height: 2px; */
+
+/* font-size: 12px;
+font-size: 14px;
+font-size: 16px;
+font-size: 18px;
+font-size: 20px;
+font-size: 24px;
+font-size: 28px;
+font-size: 32px;
+font-size: 40px;
+font-size: 48px;
+font-size: 56px;
+font-size: 64px; */
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--primary-text);
+}
+
+section {
+  margin: 60px 40px;
+}
+
+h2 {
+  font-weight: 700;
+  opacity: 0.9;
+  letter-spacing: 0.4px;
+  padding-bottom: 15px;
+   font-size: 1.6em;
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.256;
+}
+
+@media (min-width: 640px) {
+  p {
+    font-size: 1em;
+  }
+  h2 {
+   font-size: 2em;
+  }
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1.2em;
+  }
+    h2 {
+   font-size: 2.2em;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.4em;
+  }
+    h2 {
+   font-size: 2.4em;
+  }
+}
+@media (min-width: 1280px) {
+  p {
+    font-size: 1.6em;
+  }
+}
+
+/* Hero section */
+
+.hero-section {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.hero-section-img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+
+  /* filter: brightness(0.7); */
+
+  aspect-ratio: 16/9;
+}
+
+.btn-hero-section {
+  position: absolute;
+  top: 79.1%;
+  left: 12.9%;
+
+  transform: translate(-50%, -50%);
+  background-color: var(--accent);
+  color: var(--secondary-text);
+  font-weight: 600;
+  padding: 5px 7px;
+  font-size: 0.5rem;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 0.1px;
+}
+
+/* Responsive herro section */
+@media (min-width: 500px) {
+  .btn-hero-section {
+    font-size: 0.74rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .btn-hero-section {
+    font-size: 0.94rem;
+  }
+}
+@media (min-width: 768px) {
+  .btn-hero-section {
+    font-size: 1.3rem;
+    padding: 8px 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .btn-hero-section {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .btn-hero-section {
+    font-size: 1.8rem;
+    padding: 8px 10px;
+  }
+}
+
+/* Section about */
+.about-section {
+  margin: 30px 0px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 100%;
+
+  grid-template-areas:
+    "content"
+    "vidio";
+  gap: 20px;
+}
+
+.about-content {
+  grid-area: content;
+  padding: 0px 10px;
+}
+.about-video {
+  grid-area: vidio;
+  max-width: 920px;
+}
+
+.about-video video {
+  width: 100%;
+  border-radius: 0px;
+  max-height: 450px; /* Batasi tinggi maksimal gambar (sesuaikan angkanya, misal 350px atau 400px) */
+  object-fit: cover; /* Memotong gambar secara proporsional agar tidak gepeng */
+  border-radius: 2px; /* Opsional: membuat sudut gambar sedikit melengkung */
+}
+
+@media (min-width: 640px) {
+  .btn-hero-section {
+    font-size: 0.94rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-section {
+    margin: 60px 30px;
+  }
+
+  .about-content {
+    grid-area: content;
+    padding: 0px 3rem;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    grid-template-areas: "content vidio";
+    gap: 20px;
+  }
+}
