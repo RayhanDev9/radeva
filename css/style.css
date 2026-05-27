@@ -6,10 +6,19 @@
   --primary-text: #6b0f1a;
   --secondary-text: #fff;
   --text-dark: rgb(6, 5, 5);
+
+    /* ✅ FIX 1: Variabel yang hilang – sekarang didefinisikan */
+      --bg:          #f7f1e8;
+      --white:       #ffffff;
+      --border:      #ede8f0;
+      --text:        #1a0a0e;
+      --text-muted:  #9e8fa0;
+      --purple:      #7b1e28;
+      --purple-light:#f5e8ea;
 }
 
 /* Pengaturan global start */
-* {
+*,*::before, *::after  {
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0;
@@ -738,6 +747,209 @@ grid-template-columns:repeat(4, 250px);
 /* =========================
   TESTIMONIAL SECTION START
 ========================= */
+
+
+/* =========================
+  PAQ SECTION START
+========================= */
+
+  /* ── FAQ Section ── */
+    .faq-section {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+     padding: 40px 16px 64px;
+     margin-inline: 0;
+     position: relative;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px 64px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 460px;
+    }
+
+    /* ── Tab Navigation ── */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      justify-content: space-between;
+      background: var(--white);
+      border-radius: 20px;
+      padding: 16px 12px;
+      box-shadow: 0 2px 12px rgba(123,30,40,.08);
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 0;
+    }
+
+    .tab-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .tab-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--border);
+      background: var(--white);
+      transition: all .25s ease;
+    }
+
+    .tab-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--text-muted);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: stroke .25s;
+      overflow: visible;
+    }
+
+    .tab-item.active .tab-icon {
+      background: var(--purple-light);
+      border-color: var(--purple);
+    }
+
+    .tab-item.active .tab-icon svg {
+      stroke: var(--purple);
+    }
+
+    .tab-label {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      transition: color .25s;
+    }
+
+    .tab-item.active .tab-label {
+      color: var(--purple);
+    }
+
+    /* ── Section Title ── */
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary-text);
+      margin-bottom: 16px;
+      letter-spacing: -.3px;
+    }
+
+    /* ── Accordion ── */
+    /* ✅ FIX 2: Wrapper .accordion ditambahkan di HTML,
+       sehingga border-radius, overflow, dan box-shadow bekerja */
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(123,30,40,.07);
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .accordion-item:last-child {
+      border-bottom: none;
+    }
+
+    /* ✅ FIX 3: Override default button style agar tidak ikut global button */
+    .accordion-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 18px 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.2s ease;
+      font: inherit;
+      /* Reset global button overrides */
+      color: inherit;
+      border-radius: 0;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+    .accordion-header:hover {
+      background: #faf8ff;
+      /* Reset global button hover */
+      box-shadow: none;
+    }
+
+    .accordion-header span {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-text);
+    }
+
+    .accordion-icon {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-icon svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+    }
+
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.3s ease;
+    }
+
+    .accordion-body p {
+      padding: 0 20px 18px;
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: var(--primary-text);
+    }
+
+    /* Open State */
+    .accordion-item.open .accordion-body {
+      max-height: 300px;
+    }
+
+    .accordion-item.open .accordion-icon {
+      transform: rotate(45deg);
+    }
+
+    .accordion-header:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: -2px;
+    }
+
+/* =========================
+ PAQ SECTION END
+========================= */
+
 
 .testimonial-section {
  
