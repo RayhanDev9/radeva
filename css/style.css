@@ -619,6 +619,8 @@ grid-template-columns:repeat(4, 250px);
 ========================= */
 
 .modal-overlay {
+  
+
   position: fixed;
   inset: 0;
 
@@ -626,7 +628,7 @@ grid-template-columns:repeat(4, 250px);
   align-items: center;
   justify-content: center;
 
-  padding: 20px;
+  padding: .8 0;
 
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
@@ -641,6 +643,7 @@ grid-template-columns:repeat(4, 250px);
 
   z-index: 999999;
   /* position: relative; */
+;
 
 }
 
@@ -657,6 +660,7 @@ grid-template-columns:repeat(4, 250px);
 .product-modal {
   width: 100%;
   max-width: 900px;
+  min-width: 280px;
 
   background: #fff;
   border-radius: 24px;
@@ -673,7 +677,7 @@ grid-template-columns:repeat(4, 250px);
 }
 
 .modal-overlay button:hover {
-  transform: translateY(-px);
+  transform: translateY(-1px);
 }
 
 
@@ -868,8 +872,27 @@ border-radius :20px ;
     font-size: 1.5rem;
   }
 
+  .modal-close {
+  
+  right: 2%;
+  top: 2%;
+
+  
 }
 
+
+}
+
+@media (min-width: 768px) {
+ 
+  .modal-close {
+  
+  right: 2%;
+  top: 2%;
+
+  
+}
+}
 
 
 /* =========================
