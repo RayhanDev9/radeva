@@ -754,19 +754,24 @@ grid-template-columns:repeat(4, 250px);
 ========================= */
 
   /* ── FAQ Section ── */
-    .faq-section {
-      font-family: 'Nunito', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-     padding: 40px 16px 64px;
+  .faq-section {
      margin-inline: 0;
+  }
+
+  .faq-section h2 {
+    margin-left: 1.5rem;
+  }
+    .container-faq-section {
+      
+     padding: 40px 16px 64px;
+    
      position: relative;
       display: flex;
       justify-content: center;
       padding: 40px 16px 64px;
     }
 
-    .container {
+    .container-inner-faq {
       width: 100%;
       max-width: 460px;
     }
