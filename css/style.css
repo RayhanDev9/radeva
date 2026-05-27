@@ -551,6 +551,7 @@ nav{
 
 .card__content {
   padding-block: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .card__title {
