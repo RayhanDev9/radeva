@@ -59,11 +59,14 @@ button {
   border-radius: 3px;
 
   transition: all 0.3s ease;
+  z-index: 999999999;
+
 }
 
 button:hover {
   background: #5f1620;
   box-shadow: 0 10px 20px rgba(139, 36, 52, 0.35);
+ 
 }
 
 /* Global responsive */
@@ -405,6 +408,7 @@ nav{
   letter-spacing: 0.1px;
 }
 
+
 /* =========================
    HERO SECTION END
 ========================= */
@@ -599,6 +603,260 @@ grid-template-columns:repeat(4, 250px);
   }
 }
 
+/* =========================
+   MODAL OVERLAY
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+    /* overflow-y: auto; */
+
+  z-index: 999999;
+  /* position: relative; */
+
+}
+
+/* Active State */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.product-modal {
+  width: 100%;
+  max-width: 900px;
+
+  background: #fff;
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  transform: translateY(30px);
+  transition: transform 0.3s ease;
+}
+
+/* Animation */
+.modal-overlay.active .product-modal {
+  transform: translateY(0);
+}
+
+.modal-overlay button:hover {
+  transform: translateY(-px);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+/* .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+} */
+
+.modal-close {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background:var(--accent);
+  position: absolute;
+  right: 5%;
+  top: 2%;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+/* =========================
+   BODY
+========================= */
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  padding: 20px;
+}
+
+/* =========================
+   IMAGE
+======================== */
+
+.modal-product-image img {
+  width: 100%;
+  border-radius: 20px;
+
+  object-fit:contain;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.modal-product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-category {
+  /* font-size: 13px;
+  font-weight: 600;
+
+  color: #7c3aed; */
+}
+
+.product-title {
+  /* font-size: 2rem;
+  font-weight: 700; */
+}
+
+.product-price {
+   font-size: 1.5rem;
+  /* font-weight: 700; */
+
+  /* color: #7c3aed; */ */
+}
+
+.product-tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-tab span{
+display: block;
+font-weight: 600;
+ padding: 10px 7px;
+}
+
+.product-tab span.active-tab-product {
+  background:var(--accent);
+  border-radius: 9%;
+  color: var(--secondary-text);
+}
+
+.product-description {
+  line-height: 1.7;
+  color: #555;
+}
+
+/* =========================
+   VARIANT
+========================= */
+
+.product-variants {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.variant-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.variant-list button {
+  padding: 10px 18px;
+
+  border: 1px solid #ddd;
+  border-radius: 999px;
+
+  background: #fff;
+
+  cursor: pointer;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.modal-actions button:hover {
+  transform: translateY(-4px);
+}
+
+.modal-actions button:first-child {
+  
+}
+
+
+.modal-actions button:last-child {
+  
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .product-title {
+    font-size: 1.5rem;
+  }
+
+}
+
 
 
 /* =========================
@@ -677,8 +935,7 @@ grid-template-columns:repeat(4, 250px);
 /* =========================
   WHY US SECTION START
 ========================= */
-.why-us-section {
-}
+  /* z */
 
 .why-us-section h2 {
   text-align: center;

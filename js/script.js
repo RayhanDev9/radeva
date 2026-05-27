@@ -1,4 +1,5 @@
- const tabItems     = document.querySelectorAll('.tab-item');
+const faqLogic = ()=> {
+   const tabItems     = document.querySelectorAll('.tab-item');
   const sectionTitle = document.getElementById('section-title');
   const allItems     = document.querySelectorAll('.accordion-item');
 
@@ -51,3 +52,49 @@
       }
     });
   });
+}
+faqLogic()
+
+
+const modalLogic = () => {
+  const btnOpenModal = [...document.querySelectorAll(".card")];
+  const modalOverlay = document.querySelector(".modal-overlay");
+  console.info(modalOverlay)
+  const modalClose = document.querySelector(".modal-close");
+
+  /* Open Modal */
+  function openModal() {
+    modalOverlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  /* Close Modal */
+  function closeModal() {
+    console.info("ok")
+    modalOverlay.classList.remove("active");
+    // document.body.style.overflow = "";
+  }
+
+  /* Close Button */
+  modalClose.addEventListener("click", closeModal);
+
+  /* Close Outside Modal */
+  btnOpenModal.forEach((button) => {
+
+  button.addEventListener("click", () => {
+    //  if (modalOverlay.target === modalOverlay) {
+      openModal();
+    // }
+  });
+
+});
+
+  /* ESC Keyboard */
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeModal();
+    }
+  });
+}
+
+modalLogic()
