@@ -760,16 +760,16 @@ grid-template-columns:repeat(4, 250px);
   justify-content: space-around;
 }
 
-.product-tab span{
+.product-tab button{
 display: block;
 font-weight: 600;
- padding: 10px 7px;
+border-radius :20px ;
+ padding: 10px 8px;
 }
 
-.product-tab span.active-tab-product {
-  background:var(--accent);
-  border-radius: 9%;
-  color: var(--secondary-text);
+.product-tab button.non-active-tab-product {
+  background:transparent;
+  color: var(--primary-text);
 }
 
 .product-description {
@@ -828,9 +828,11 @@ font-weight: 600;
   font-weight: 600;
 }
 
-.modal-actions button:hover {
-  transform: translateY(-4px);
+.modal-actions button {
+  
 }
+
+
 
 .modal-actions button:first-child {
   
