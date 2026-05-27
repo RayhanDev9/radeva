@@ -1129,7 +1129,6 @@ TESTIMONIAL SECTION END
 
 .contact-container{
   max-width:1200px;
-
   margin:auto;
 
   display:grid;
@@ -1151,6 +1150,7 @@ TESTIMONIAL SECTION END
 
 .contact-info  {
   grid-area: info;
+  padding-inline:2rem;
 }
 
 .contact-item{
@@ -1183,8 +1183,7 @@ TESTIMONIAL SECTION END
 
   border-radius:20px;
 
-  box-shadow:
-  0 10px 20px rgba(0,0,0,.05);
+  /* box-shadow:0 10px 20px rgba(0,0,0,.05); */
 
   display:flex;
 
@@ -1245,7 +1244,11 @@ grid-template-columns:
 
   align-items:center;
 }
+.contact-info, .contact-form  {
+ align-self: center;
 }
+}
+
 
 /* =========================
   CONTACT SECTION END
