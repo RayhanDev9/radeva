@@ -828,19 +828,20 @@ grid-template-columns:repeat(4, 250px);
 }
 
 .product-category {
-  /* font-size: 13px;
-  font-weight: 600;
+  /* /* font-size: 13px;
+  font-weight: 600; */
 
-  color: #7c3aed; */
+  
 }
 
 .product-title {
-  /* font-size: 2rem;
-  font-weight: 700; */
+  /* font-size: 1rem; */
+  display:inline-block;
+  font-weight: 700;
 }
 
 .product-price {
-   font-size: 1.5rem;
+   font-size: 1.4rem;
   /* font-weight: 700; */
 
   /* color: #7c3aed; */ */
@@ -855,8 +856,9 @@ grid-template-columns:repeat(4, 250px);
 .product-tab button{
 display: block;
 font-weight: 600;
-border-radius :20px ;
+border-radius :10px ;
  padding: 10px 8px;
+ background-color: rgba(107, 15, 26,.9);
 }
 
 .product-tab button.non-active-tab-product {
@@ -956,7 +958,11 @@ border-radius :20px ;
 
   
 }
+.product-tab button{
 
+border-radius :20px ;
+
+}
 
 }
 
