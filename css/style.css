@@ -193,8 +193,8 @@ nav{
 }
 
 .logo img{
-    height:40px;
-    margin-right:1rem;
+    width: 60px;
+height: auto;
 }
 
 /* Nav Links */
@@ -208,6 +208,7 @@ nav{
 
 .nav-links a{
     text-decoration:none;
+
 
     color:var(--primary-text);
 
@@ -392,7 +393,7 @@ nav{
   position: relative;
   width: 100%;
   max-width: 1920px;
-  margin-top: 53px;
+  margin-top: 84.7px;
 
 }
 
