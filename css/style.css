@@ -160,7 +160,7 @@ nav{
     justify-content:space-between;
     align-items:center;
 
-    padding:.75rem 10%;
+    padding:.75rem 8%;
 
     background-color:var(--primary-bg);
 
@@ -285,10 +285,16 @@ height: auto;
 
 @media (max-width:768px){
 
+  nav {
+    padding:.75rem 4.66%;
+
+  }
+
     .menu-toggle{
         display:flex;
     }
 
+ 
     .nav-links{
         position:fixed;
 
@@ -297,6 +303,7 @@ height: auto;
 
         width:100%;
         height:100vh;
+
 
         background:
         rgba(255,255,255,.95);
