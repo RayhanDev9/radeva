@@ -38,6 +38,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   color: var(--primary-text);
+  
 }
 
 section {
@@ -742,7 +743,8 @@ grid-template-columns:repeat(4, 250px);
   background: #fff;
   border-radius: 24px;
 
-  overflow: hidden;
+  height: 90vh;
+
 
   transform: translateY(30px);
   transition: transform 0.3s ease;
@@ -948,11 +950,10 @@ border-radius :10px ;
 .modal-actions button:last-child:hover {
    box-shadow: 0 10px 20px rgba(139, 36, 52, 0.35);
 }
-}
+
 
 .product-description {
   color: var(--primary-text);
-
 }
 
 
@@ -988,6 +989,13 @@ border-radius :10px ;
 border-radius :20px ;
 
 }
+
+.product-description {
+   max-height: 5.5em;   /* kira-kira 3 baris */
+  overflow-y: auto;    /* munculkan scroll vertical */
+
+}
+
 
 
 }
