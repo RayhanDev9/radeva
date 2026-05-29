@@ -589,7 +589,7 @@
               <div class="modal-product-content">
 
                 <span class="product-category">
-                  MBK
+                 Varian Powder
                 </span>
 
                 <h3 class="product-title">
@@ -601,26 +601,31 @@
                 </p>
 
               <article class="product-tab">
-                <button class="">Detail</button>
-                <button class="non-active-tab-product">Cara pakai</button>
+                <button class="product-tab-item active-tab-product " data-tab="umum">Umum</button>
+                <button class="product-tab-item" data-tab="cara-pakai">Cara Pakai</button>
 
               </article>
                <div class="container-buy-and-description">
-                 <p class="product-description">
+                 <p class="product-description" data-tab="umum">
                   Serum dengan kandungan niacinamide 
                   untuk membantu mencerahkan kulit.
+                </p>
+                
+                 <p class="product-description" data-tab="cara-pakai" style="display: none;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ea debitis eos harum tempora tenetur, cumque quasi qui ducimus natus explicabo illo non, ex minus sapiente! Quidem culpa dolores maxime?
                 </p>
 
                
                 <!-- Product Actions -->
                 <div class="modal-actions">
 
-                  <button type="button">
-                    Add to Cart
+                  <button type="button" class="btn-buy">
+                    Buy Now ➜
+
                   </button>
 
-                  <button type="button">
-                    Buy Now
+                  <button type="button" class="btn-shoppe">
+                    <img src="assets/svg/shoppe.svg" alt="">
                   </button>
 
                 </div>

@@ -17,11 +17,14 @@ const faqLogic = ()=> {
       tabItems.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
 
+      console.info(tabLabels[target])
+
       sectionTitle.textContent = tabLabels[target];
 
       // ✅ FIX 3: Hapus attribute `hidden` dan pakai style.display saja
       allItems.forEach(item => {
-        item.removeAttribute('hidden');         // bersihkan hidden attr
+        item.removeAttribute('hidden');
+            // bersihkan hidden attr
         if (item.dataset.tab === target) {
           item.style.display = '';
         } else {
@@ -97,4 +100,35 @@ const modalLogic = () => {
   });
 }
 
+
+
 modalLogic()
+
+const tabProductLogic = () => {
+  const productTab = [...document.querySelectorAll('.product-tab button')];
+  const productTabItem = [...document.querySelectorAll('.product-tab-item')];
+  const allItems = [...document.querySelectorAll('.product-description')];
+  console.info(productTabItem[0].dataset.tab)
+
+  // Animasi perpindahan Tab 
+  productTab.forEach(itemTab => {
+    itemTab.addEventListener('click',  () => {
+      const target = itemTab.dataset.tab;
+
+      productTab.forEach(other => {
+          if(other.classList.contains('active-tab-product')) !other.classList.remove('active-tab-product');
+          if(!other.classList.contains('active-tab-product'))itemTab.classList.add('active-tab-product');
+      })
+
+      allItems.forEach(item => {
+        if(item.dataset.tab === target) item.style.display = '';
+        else item.style.display = 'none';
+
+    
+  });
+    })
+  });
+
+ 
+}
+tabProductLogic()

@@ -716,9 +716,9 @@ grid-template-columns:repeat(4, 250px);
   transition:
     opacity 0.3s ease,
     visibility 0.3s ease;
-    /* overflow-y: auto; */
+    overflow-y: hidden;
 
-  z-index: 999999;
+  z-index: 999999999;
   /* position: relative; */
 ;
 
@@ -858,12 +858,16 @@ display: block;
 font-weight: 600;
 border-radius :10px ;
  padding: 10px 8px;
- background-color: rgba(107, 15, 26,.9);
+ background:transparent;
+  color: var(--primary-text);
+  transition: all .3s ease;
 }
 
-.product-tab button.non-active-tab-product {
-  background:transparent;
-  color: var(--primary-text);
+
+.product-tab button.active-tab-product {
+  background-color: rgba(107, 15, 26,.9);
+  color: var(--secondary-text);
+
 }
 
 .product-description {
@@ -923,15 +927,27 @@ border-radius :10px ;
 }
 
 
+.modal-actions button:first-child  {
+ 
 
+}
 
-.modal-actions button:first-child {
-  
+.modal-actions button:last-child img{
+  width: 6rem;
+  display: inline-block;
+  border-radius: 5px;
+
 }
 
 
 .modal-actions button:last-child {
-  
+  background-color: transparent;
+   overflow: hidden;
+}
+
+.modal-actions button:last-child:hover {
+   box-shadow: 0 10px 20px rgba(139, 36, 52, 0.35);
+}
 }
 
 .product-description {
@@ -1643,6 +1659,9 @@ TESTIMONIAL SECTION END
   resize:none;
 }
 
+.contact-form  button  {
+  z-index: 99;
+}
 
 
 /* RESPONISVE CONTACT SECTION */
