@@ -42,6 +42,7 @@ body {
 }
 
 section {
+   scroll-margin-top: 120px;
   margin: 60px 40px;
 }
 
@@ -69,7 +70,7 @@ button {
   border-radius: 3px;
 
   transition: all 0.3s ease;
-  z-index: 999999999;
+  /* z-index: 9; */
 
 }
 
@@ -719,7 +720,7 @@ grid-template-columns:repeat(4, 250px);
     visibility 0.3s ease;
     overflow-y: hidden;
 
-  z-index: 999999999;
+  /* z-index: 999999999; */
   /* position: relative; */
 ;
 
@@ -804,7 +805,6 @@ grid-template-columns:repeat(4, 250px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-
   padding: 20px;
 }
 
@@ -991,8 +991,8 @@ border-radius :20px ;
 }
 
 .product-description {
-   max-height: 5.5em;   /* kira-kira 3 baris */
-  overflow-y: auto;    /* munculkan scroll vertical */
+    /* kira-kira 3 baris */
+  /* overflow-y: auto;    */
 
 }
 
@@ -1039,6 +1039,16 @@ font-size: 0.87em;
  gap: 1rem;
  /* position: ; */
 }
+}
+
+
+@media (min-width: 992px) {
+
+.container-buy-and-description {
+    flex: 1;
+    padding-bottom: 2.5rem;
+}
+  
 }
 
 

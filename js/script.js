@@ -59,50 +59,48 @@ const faqLogic = ()=> {
 faqLogic()
 
 
-const modalLogic = () => {
-  const btnOpenModal = [...document.querySelectorAll(".card")];
-  const modalOverlay = document.querySelector(".modal-overlay");
-  console.info(modalOverlay)
-  const modalClose = document.querySelector(".modal-close");
+// const modalLogic = () => {
+//   const modalOverlay = document.querySelector(".modal-overlay");
+//   console.info(modalOverlay)
+//   const btnOpenModal = [...document.querySelectorAll(".card")];
+//   const modalClose = document.querySelector(".modal-close");
+// // 
+//   /* Open Modal */
+//   function openModal() {
+//     modalOverlay.classList.add("active");
+//     document.body.style.overflow = "hidden";
+//   }
 
-  /* Open Modal */
-  function openModal() {
-    modalOverlay.classList.add("active");
-    document.body.style.overflow = "hidden";
-  }
+//   /* Close Modal */
+//   function closeModal() {
+//     console.info("ok")
+//     modalOverlay.classList.remove("active");
+//     // document.body.style.overflow = "";
+//   }
 
-  /* Close Modal */
-  function closeModal() {
-    console.info("ok")
-    modalOverlay.classList.remove("active");
-    // document.body.style.overflow = "";
-  }
+//   /* Close Button */
+//   modalClose.addEventListener("click", closeModal);
 
-  /* Close Button */
-  modalClose.addEventListener("click", closeModal);
+//   /* Close Outside Modal */
+//   btnOpenModal.forEach((button) => {
 
-  /* Close Outside Modal */
-  btnOpenModal.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     //  if (modalOverlay.target === modalOverlay) {
+//       openModal();
+//       // window.location.href = 'html/product.html';
+//     // }
+//   });
 
-  button.addEventListener("click", () => {
-    //  if (modalOverlay.target === modalOverlay) {
-      openModal();
-    // }
-  });
+// });
 
-});
-
-  /* ESC Keyboard */
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      closeModal();
-    }
-  });
-}
-
-
-
-modalLogic()
+//   /* ESC Keyboard */
+//   document.addEventListener("keydown", (e) => {
+//     if (e.key === "Escape") {
+//       closeModal();
+//     }
+//   });
+// }
+// modalLogic()
 
 const tabProductLogic = () => {
   const productTab = [...document.querySelectorAll('.product-tab button')];
@@ -114,6 +112,7 @@ const tabProductLogic = () => {
   productTab.forEach(itemTab => {
     itemTab.addEventListener('click',  () => {
       const target = itemTab.dataset.tab;
+
 
       productTab.forEach(other => {
           if(other.classList.contains('active-tab-product')) !other.classList.remove('active-tab-product');
@@ -132,3 +131,16 @@ const tabProductLogic = () => {
  
 }
 tabProductLogic()
+
+const moveHtmlLogic = () => {
+     const btnCard = [...document.querySelectorAll(".card")];
+
+     btnCard.forEach(btn => {
+      btn.addEventListener('click', () =>{
+
+        window.location.href = 'html/product.html';
+      })
+     });
+}
+
+moveHtmlLogic();

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product </title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style> 
+
+    .product-section {
+      /* margin-top: 60px; */
+    }
+
+    .modal-body {
+      margin-bottom: 30px;
+
+    }
+
+    @media (min-width: 768px) {
+       .product-section {
+      margin-top: 100px;
+    }
+ 
+  
+  
+}
+  </style>
+</head>
+<body>
+   <!-- Efek Animation Ketika Scrol -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navbar start -->
+    <nav>
+        <div class="logo">
+          <img src="../assets/img/imgs/logo.png" alt="isc_logo">
+         </div>
+
+        <input type="checkbox" id="check">
+
+        <label for="check" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="../index.html#hero-section">Home</a></li>
+            <li><a href="../index.html#about-section">About Us</a></li>
+            <li><a href="html/product.html">Product</a></li>
+            <li><a href="../index.html#patners-section">Patners</a></li>
+            <li><a href="../index.html#why-us">Why us</a></li>
+            <li><a href="../index.html#faq-section">FAQ</a></li>
+            <li><a href="../index.html#testimonial">Testimoni</a></li>
+            <li><a href="../index.html#quick-section">Quick</a></li>
+            <li><a href="../index.html#contact-section">Contact </a></li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+    <main>
+     <!-- Product section start -->
+      <section class="product-section" id="product-section">
+         <div class="modal-body">
+
+              <!-- Product Image -->
+              <figure class="modal-product-image">
+                <img 
+                  src="../assets/img/products/powder/powder-1.png" 
+                  alt="Product Image"
+                >
+              </figure>
+
+              <!-- Product Content -->
+              <div class="modal-product-content">
+
+                <span class="product-category">
+                 Varian Powder
+                </span>
+
+                <h3 class="product-title">
+                  Brightening Serum
+                </h3>
+
+                <p class="product-price">
+                  Rp129.000
+                </p>
+
+              <article class="product-tab">
+                <button class="product-tab-item active-tab-product " data-tab="umum">Umum</button>
+                <button class="product-tab-item" data-tab="cara-pakai">Cara Pakai</button>
+
+              </article>
+               <div class="container-buy-and-description">
+                 <p class="product-description" data-tab="umum">
+                  Serum dengan kandungan niacinamide 
+                  untuk membantu mencerahkan kulit.
+                </p>
+                
+                 <p class="product-description" data-tab="cara-pakai" style="display: none;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ea debitis eos harum tempora tenetur, cumque quasi qui ducimus natus explicabo illo non, ex minus sapiente! Quidem culpa dolores maxime?
+                </p>
+
+               
+                <!-- Product Actions -->
+                <div class="modal-actions">
+
+                  <button type="button" class="btn-buy">
+                    Buy Now ➜
+
+                  </button>
+
+                  <button type="button" class="btn-shoppe">
+                    <img src="../assets/svg/shoppe.svg" alt="">
+                  </button>
+
+                </div>
+               </div>
+
+              </div>
+
+            </div>
+        <div class="product-varian-powder-container">
+        <h2>Varian Powder</h2>  
+        <div class="cards-container">
+          
+
+          <article class="card">
+          <img
+            src="../assets/img/products/powder/powder-1.png"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+          <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+          <article class="card">
+          <img
+            src="../assets/img/products/powder/powder-2.jpg"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+          <article class="card">
+          <img
+            src="../assets/img/products/powder/powder-3.webp"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+        </article>
+          <article class="card">
+          <img
+            src="../assets/img/products/powder/powder-4.png"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+          <article class="card">
+          <img
+            src="../assets/img/products/powder/powder-5.png"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+          <article class="card">
+          <img
+            src="../assets/img/products/powder/powder-6.webp"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+        </div>
+        </div>
+        <div class="product-varian-roll-container">
+          <h2>Varian Roll</h2>
+        <div class="cards-container">
+          <article class="card">
+          <img
+            src="../assets/img/products/roll/roll-1.png"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+          <article class="card">
+          <img
+            src="../assets/img/products/roll/roll-2.png"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+          <article class="card">
+          <img
+            src="../assets/img/products/roll/roll-3.png"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+        </article>
+          <article class="card">
+          <img
+            src="../assets/img/products/roll/roll-4.png"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+          <article class="card">
+          <img
+            src="../assets/img/products/roll/roll-5.png"
+            alt="Sneakers Modern"
+            class="card-img"
+          />
+          <!-- <h3 class="product-card__variant-title">Varian</h3> -->
+
+            <div class="card__content">
+            <h3 class="card__title">MBK</h3>
+
+            <div class="card__info">
+              <span class="card__price">Rp 13.000</span>
+              <span class="card__sold">10+ terjual</span>
+            </div>
+
+            <div class="card__meta">
+                <span class="card__estimate__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="currentColor" 
+                  class="icon-truck">
+                  
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M8.25 18.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm10.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3 13.5V6.75A2.25 2.25 0 0 1 5.25 4.5h8.25A2.25 2.25 0 0 1 15.75 6.75v6.75m0 0h2.69a2.25 2.25 0 0 1 1.91 1.06l.9 1.44a2.25 2.25 0 0 1 .35 1.19v1.56h-1.5m-4.35-6.75H3m12.75 0v6.75m0 0H8.25m7.5 0h-7.5" />
+                   </svg> 
+                   
+                </span>
+
+                <span class="card__estimate__text"> &lt; 2-3 hari </span> 
+                <span class="limit">|</span>
+                
+              <span class="card__location">Kab. Tangerang</span>
+            </div>
+          </div>
+
+          <!-- <button class="card-btn">Detail</button> -->
+        </article>
+        </div>
+        </div>
+          </section>
+
+        </div>
+      </section>
+      <!-- Product section end-->
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+          <!-- Contact -->
+          <div class="footer-box">
+
+            <h3>CONTACT</h3>
+
+            <ul>
+
+              <li>📍 Jakarta, Indonesia</li>
+
+              <li>📞 WhatsApp Support</li>
+
+              <li>✉️ mbkpowder@gmail.com</li>
+
+              <li>🕒 Monday - Friday : 08:00 - 20:00</li>
+
+            </ul>
+
+          </div>
+
+          <!-- Shop -->
+          <div class="footer-box">
+
+            <h3>SHOP</h3>
+
+            <ul>
+
+              <li><a href="#">New Products</a></li>
+
+              <li><a href="#">Best Seller</a></li>
+
+              <li><a href="#">Discount Products</a></li>
+
+              <li><a href="#">Contact</a></li>
+
+            </ul>
+
+          </div>
+
+          <!-- Support -->
+          <div class="footer-box">
+
+            <h3>SUPPORT</h3>
+
+            <ul>
+
+              <li><a href="#">FAQ</a></li>
+
+              <li><a href="#">Return Policy</a></li>
+
+              <li><a href="#">Voucher</a></li>
+
+              <li><a href="#">Site Map</a></li>
+
+            </ul>
+
+          </div>
+
+          <!-- Account -->
+          <div class="footer-box">
+
+            <h3>ACCOUNT</h3>
+
+            <ul>
+
+              <li><a href="#">My Account</a></li>
+
+              <li><a href="#">Register</a></li>
+
+              <li><a href="#">Wishlist</a></li>
+
+              <li><a href="#">Forgot Password</a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+
+          <h2>MBK Powder</h2>
+
+          <p>
+            Produk body care berkualitas premium
+            dengan aroma khas dan terpercaya.
+          </p>
+
+        </div>
+
+      </footer>
+      <script src="../js/script.js"></script>
+</body>
+</html>
