@@ -102,6 +102,33 @@ faqLogic()
 // }
 // modalLogic()
 
+const logicSendMassage = () => {
+  const sendMessage = document.querySelector('.send-message');
+  console.info(sendMessage)
+
+   sendMessage.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.info('ok')
+
+    const name = document.getElementById('name').value;
+    const noWa = document.getElementById('no-wa').value;
+    const message = document.getElementById('message').value;
+
+      const text =
+      `Halo, saya ${name}
+      No. WA: ${noWa}
+
+       Pesan:
+       ${message}`;
+
+    window.open(
+      `https://wa.me/62895384390007?text=${encodeURIComponent(text)}`,
+      '_blank'
+    );
+      });
+}
+logicSendMassage()
+
 const tabProductLogic = () => {
   const productTab = [...document.querySelectorAll('.product-tab button')];
   const productTabItem = [...document.querySelectorAll('.product-tab-item')];

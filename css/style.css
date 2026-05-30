@@ -1629,12 +1629,30 @@ TESTIMONIAL SECTION END
 
   color:#8b2434;
 }
+.contact-description {
+  margin-bottom: .5rem;
+}
 
-.contact-item span{
+.contact-item span {
   color:var(--primary-text);
 
   font-size:1.1rem;
 }
+.contact-item span a{
+
+  display: inline-block;
+  text-decoration:none;
+
+  transition:.3s ease;
+  color: var(--primary-text);
+  /* margin-top: .9rem; */
+
+}
+
+/* .contact-item span a:hover{
+  color:yellow;
+} */
+
 
 .contact-form{
   background:var(--primary-bg);
@@ -1775,8 +1793,8 @@ grid-template-columns:
   transition:.3s ease;
 }
 
-.footer-box a:hover{
-  color:#8b2434;
+.footer-box a:hover,.footer-box li:hover{
+  color:yellow;
 }
 
 .footer-bottom{
