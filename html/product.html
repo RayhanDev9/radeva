@@ -687,6 +687,15 @@
         </div>
 
       </footer>
-      <script src="../js/script.js"></script>
+      <script src="../js/script.js">
+            const btnCard = [...document.querySelectorAll(".card")];
+
+     btnCard.forEach(btn => {
+      btn.addEventListener('click', () =>{
+
+        window.location.href = 'html/product.html';
+      })
+     });
+      </script>
 </body>
 </html>
