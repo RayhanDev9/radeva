@@ -1150,13 +1150,13 @@ font-size: 0.87em;
 }
 
 
- 
+/*  
 
 .why-card:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px) scale(1.02);
 
-}
+} */
 
 .svg {
   width: 32px;
@@ -1428,10 +1428,10 @@ border: 1px solid rgba(123, 30, 39, 0.1);
 
 
 
-.testimonial-card:hover {
+/* .testimonial-card:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px) scale(1.02);
-}
+} */
 
 .testimonial-profile {
   display: flex;
