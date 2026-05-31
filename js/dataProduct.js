@@ -5,7 +5,7 @@ export const dataProduct = [
     title: 'Bedak MBK Powder Sachetan 13,6 gram White',
     price : 6000,
     shippingTime : '< 2-3 hari',
-    image : 'assets/img/products/powder/powder-7.png',
+    image : 'assets/img/products/powder/powder-7.avif',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
   productDescriptionGeneral :`
@@ -44,7 +44,7 @@ export const dataProduct = [
     title: 'Box 200 gram - bedak deodoran legendaris Varian White',
     price : 36000,
     shippingTime : '< 2-3 hari',
-    image : 'assets/img/products/powder/powder-1.png',
+    image : 'assets/img/products/powder/powder-1.avif',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : `<li>
@@ -78,7 +78,7 @@ export const dataProduct = [
      varian : 'Powder',
     title: 'Bedak MBK Powder Sachetan 13,6 gram Varian Silver',
     price : 6000,
-    image : 'assets/img/products/powder/powder-2.jpg',
+    image : 'assets/img/products/powder/powder-2.avif',
     shippingTime : '< 2-3 hari',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
@@ -114,7 +114,7 @@ export const dataProduct = [
     title: 'Box 200 gram - bedak deodoran legendaris Varian Silver',
     price : 36000,
     shippingTime : '< 2-3 hari',
-    image : 'assets/img/products/powder/powder-8.png',
+    image : 'assets/img/products/powder/powder-8.avif',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : `<li>
@@ -150,7 +150,7 @@ export const dataProduct = [
     title: 'Bedak Powder MBK Tin 60g - bedak deodoran legendaris Varian White',
     price : 20000,
     shippingTime : '< 2-3 hari',
-    image : 'assets/img/products/powder/powder-6.webp',
+    image : 'assets/img/products/powder/powder-6.avif',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : `<li>
@@ -186,7 +186,7 @@ export const dataProduct = [
     title: 'Bedak Powder MBK Tin 60g - bedak deodoran legendaris Varian Silver',
     price : 20000,
     shippingTime : '< 2-3 hari',
-    image : 'assets/img/products/powder/powder-9.png',
+    image : 'assets/img/products/powder/powder-9.avif',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : `
@@ -225,7 +225,7 @@ export const dataProduct = [
     title: 'MBK Deodorant Roll On Pria dan Wanita 40ml Variant Purple',
     price : 15000,
     shippingTime : '< 2-3 hari',
-    image : 'assets/img/products/roll/roll-1.png',
+    image : 'assets/img/products/roll/roll-1.avif',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : `
@@ -263,7 +263,7 @@ export const dataProduct = [
     title: 'MBK Deodorant Roll On Pria dan Wanita 40ml Variant Grey',
     price : 15000,
     shippingTime : '< 2-3 hari',
-    image : 'assets/img/products/roll/roll-2.png',
+    image : 'assets/img/products/roll/roll-2.avif',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : `
@@ -300,7 +300,7 @@ export const dataProduct = [
     title: 'MBK Deodorant Roll On Pria dan Wanita 40ml Variant Blue',
     price : 15000,
     shippingTime : '< 2-3 hari',
-    image : 'assets/img/products/roll/roll-3.png',
+    image : 'assets/img/products/roll/roll-3.avif',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : `<li>
@@ -336,7 +336,7 @@ export const dataProduct = [
     title: 'MBK Deodorant Roll On Pria dan Wanita 40ml Variant Pink',
     price : 15000,
     shippingTime : '< 2-3 hari',
-    image : 'assets/img/products/roll/roll-5.png',
+    image : 'assets/img/products/roll/roll-5.avif',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : `
