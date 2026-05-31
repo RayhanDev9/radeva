@@ -160,7 +160,7 @@ const tabProductLogic = () => {
 
  
 }
-tabProductLogic()
+// tabProductLogic()
 
 const productLoopingLogic = () => {
   const containerCardVarianPowder = document.querySelector('.product-varian-powder-container .cards-container');

@@ -7,6 +7,9 @@ export const dataProduct = [
     image : '../assets/img/products/powder/powder-7.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+  productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'Pagi ini langit terlihat cerah meskipun sempat turun hujan semalam.',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
   {
     varian : 'Powder',
@@ -16,6 +19,9 @@ export const dataProduct = [
     image : '../assets/img/products/powder/powder-1.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
   {
      varian : 'Powder',
@@ -25,6 +31,9 @@ export const dataProduct = [
     shippingTime : '< 2-3 hari',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
   {
     varian : 'Powder',
@@ -34,6 +43,9 @@ export const dataProduct = [
     image : '../assets/img/products/powder/powder-8.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
 
   {
@@ -44,6 +56,9 @@ export const dataProduct = [
     image : '../assets/img/products/powder/powder-6.webp',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
     varian : 'Powder',
@@ -53,6 +68,9 @@ export const dataProduct = [
     image : '../assets/img/products/powder/powder-9.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
 
   // Roll
@@ -64,6 +82,9 @@ export const dataProduct = [
     image : '../assets/img/products/roll/roll-1.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
     varian : 'Roll',
@@ -73,6 +94,9 @@ export const dataProduct = [
     image : '../assets/img/products/roll/roll-2.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
     varian : 'Roll',
@@ -82,6 +106,9 @@ export const dataProduct = [
     image : '../assets/img/products/roll/roll-3.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
     varian : 'Roll',
@@ -91,6 +118,9 @@ export const dataProduct = [
     image : '../assets/img/products/roll/roll-5.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
 ]; 
 
@@ -226,12 +256,11 @@ const tabProductLogic = () => {
 
  
 }
-tabProductLogic()
+
 
 const productLoopingLogic = () => {
   const containerCardVarianPowder = document.querySelector('.product-varian-powder-container .cards-container');
   const containerCardVarianRoll = document.querySelector('.product-varian-roll-container .cards-container');
-
  dataProduct.forEach(itemProduct => {
   const html = `
    <article class="card">
@@ -270,10 +299,104 @@ const productLoopingLogic = () => {
   else containerCardVarianRoll.insertAdjacentHTML('beforeend',html)
  });
 
-
 }
 
 productLoopingLogic()
+tabProductLogic()
+
+const productSelectionLogic =() => {
+const containerProductSelectionBody = document.querySelector('.product-selection-body');
+const cardAll = [...document.querySelectorAll('.card')];
+ const scrollToTopOnProductClick = () => {
+    window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+ }
+//  console.info(cardAll)
+
+  cardAll.forEach(card => {
+  card.addEventListener('click', () => {
+    containerProductSelectionBody.innerHTML = '';
+    const titleCard = card.querySelector('.card__title').textContent.trim();
+
+    const product = dataProduct.find(
+      item => item.title === titleCard
+    );
+
+     const html = `
+    <!-- Product Image -->
+              <figure class="product-selection-product-image">
+                <img 
+                  src="${product.image}" 
+                  alt="Product Image"
+                >
+              </figure>
+
+              <!-- Product Content -->
+              <div class="product-selection-product-content">
+
+                <span class="product-category">
+                 ${product.varian}
+                </span>
+
+                <h3 class="product-title">
+                 ${product.title}
+                </h3>
+
+                <p class="product-price">
+                  Rp ${product.price}
+                </p>
+
+              <article class="product-tab">
+               <button class="product-tab-item active-tab-product " data-tab="umum">Umum</button>
+                <button class="product-tab-item" data-tab="cara-pakai">Cara Pakai</button>
+
+              </article>
+               <div class="container-buy-and-description">
+                 <p class="product-description" data-tab="umum">
+                 ${product.productDescriptionGeneral}
+                </p>
+                
+                 <p class="product-description" data-tab="cara-pakai" style="display: none;">
+                 ${product.productDescriptionhowToUse}
+                </p>
+
+               
+                <!-- Product Actions -->
+                <div class="product-selection-actions">
+
+
+                  <a href="" target="_blank">
+                    Buy Now ➜</a>
+
+                  <a  class="btn-shoppe">
+                    <img src="../assets/svg/shoppe.svg" alt="">
+                  </a>
+
+                </div>
+               </div>
+
+              </div>
+  `
+   containerProductSelectionBody.insertAdjacentHTML("beforeend", html);
+
+   scrollToTopOnProductClick()
+
+    tabProductLogic()
+ 
+
+ 
+
+    console.log(product);
+  });
+});
+}
+productSelectionLogic();
+
+
+
+
 
 const moveHtmlLogic = () => {
      const btnCard = [...document.querySelectorAll(".card")];
@@ -286,4 +409,4 @@ const moveHtmlLogic = () => {
      });
 }
 
-moveHtmlLogic();
+// moveHtmlLogic();
