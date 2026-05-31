@@ -10,7 +10,7 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
   productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'Pagi ini langit terlihat cerah meskipun sempat turun hujan semalam.',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'https://shopee.co.id/Bedak-MBK-Powder-Sachetan-13-6-gram-Dan-Box-200-gram-bedak-deodoran-legendaris-Varian-Putih-i.1736388240.56660827193?extraParams=%7B%22display_model_id%22%3A272631610843%2C%22model_selection_logic%22%3A2%7D',
   },
   {
     id:2,
@@ -23,7 +23,7 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'hhttps://shopee.co.id/Bedak-MBK-Powder-Sachetan-13-6-gram-Dan-Box-200-gram-bedak-deodoran-legendaris-Varian-Putih-i.1736388240.56660827193?extraParams=%7B%22display_model_id%22%3A272631610843%2C%22model_selection_logic%22%3A2%7D',
   },
   {
     id:3,
@@ -36,7 +36,7 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'https://shopee.co.id/Bedak-MBK-Powder-Sachetan-13-6-gram-Dan-Box-200-gram-bedak-deodoran-legendaris-Varian-Silver-i.1736388240.56210822354?extraParams=%7B%22display_model_id%22%3A325945884290%2C%22model_selection_logic%22%3A2%7D',
   },
   {
     id:4,
@@ -49,7 +49,7 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'https://shopee.co.id/Bedak-MBK-Powder-Sachetan-13-6-gram-Dan-Box-200-gram-bedak-deodoran-legendaris-Varian-Silver-i.1736388240.56210822354?extraParams=%7B%22display_model_id%22%3A325945884290%2C%22model_selection_logic%22%3A2%7D',
   },
 
   {
@@ -63,7 +63,7 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'https://shopee.co.id/Bedak-Powder-MBK-Tin-60g-bedak-deodoran-legendaris-Allvarian-i.1736388240.56510721011?extraParams=%7B%22display_model_id%22%3A380937840735%2C%22model_selection_logic%22%3A2%7D',
   },
     {
       id:6,
@@ -76,7 +76,7 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'https://shopee.co.id/Bedak-Powder-MBK-Tin-60g-bedak-deodoran-legendaris-Allvarian-i.1736388240.56510721011?extraParams=%7B%22display_model_id%22%3A380937840735%2C%22model_selection_logic%22%3A2%7D',
   },
 
   // Roll
@@ -91,7 +91,7 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'https://shopee.co.id/MBK-Deodorant-Roll-On-Pria-dan-Wanita-40ml-Variant-Ungu-i.1736388240.47510781088?extraParams=%7B%22display_model_id%22%3A340940911178%2C%22model_selection_logic%22%3A2%7D',
   },
     {
       id:8,
@@ -104,7 +104,7 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'https://shopee.co.id/MBK-Deodorant-Roll-On-Pria-dan-Wanita-40ml-Variant-Black-i.1736388240.53110765426?extraParams=%7B%22display_model_id%22%3A425940846075%2C%22model_selection_logic%22%3A2%7D',
   },
     {
       id:9,
@@ -117,7 +117,7 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'https://shopee.co.id/MBK-Deodorant-Roll-On-Pria-dan-Wanita-40ml-Variant-Biru-i.1736388240.54160765505?extraParams=%7B%22display_model_id%22%3A405940874229%2C%22model_selection_logic%22%3A2%7D',
   },
     {
       id:10,
@@ -130,6 +130,6 @@ export const dataProduct = [
    countGoodsSold :'10+ terjual',
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
-   productLink : 'https://id.shp.ee/7q3drsbu',
+   productLink : 'https://shopee.co.id/MBK-Deodorant-Roll-On-Pria-dan-Wanita-40ml-Variant-Pink-i.1736388240.51860754677?extraParams=%7B%22display_model_id%22%3A350940947236%2C%22model_selection_logic%22%3A2%7D',
   },
 ]; 
