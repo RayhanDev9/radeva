@@ -169,11 +169,6 @@ export const productLoopingLogic = () => {
 
 
   containerCardBestSeller.classList.add('best-seler');
-  console.info(containerH2BestSeller)
-  // containerH2BestSeller.style.justifyContent = 'center';
-  // containerH2BestSeller.style.width = '100%';
-
-
 }
 
 // Function untuk perpindahan ke page product.html, sesuai product

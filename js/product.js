@@ -5,6 +5,4 @@ tabProductLogic()
 
 productSelectionLogic();
 
-
-
 renderProductDetail();
