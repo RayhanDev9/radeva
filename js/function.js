@@ -87,34 +87,7 @@ export const sendMassageLogic = () => {
       });
 }
 
-// Function Untuk perpindahan tab dalam product pilihan
-export const tabProductLogic = () => {
-  const productTab = [...document.querySelectorAll('.product-tab button')];
-  const productTabItem = [...document.querySelectorAll('.product-tab-item')];
-  const allItems = [...document.querySelectorAll('.product-description')];
 
-  // Animasi perpindahan Tab 
-  productTab.forEach(itemTab => {
-    itemTab.addEventListener('click',  () => {
-      const target = itemTab.dataset.tab;
-
-
-      productTab.forEach(other => {
-          if(other.classList.contains('active-tab-product')) !other.classList.remove('active-tab-product');
-          if(!other.classList.contains('active-tab-product'))itemTab.classList.add('active-tab-product');
-      })
-
-      allItems.forEach(item => {
-        if(item.dataset.tab === target) item.style.display = '';
-        else item.style.display = 'none';
-
-    
-  });
-    })
-  });
-
- 
-}
 
 
 // Function untuk Looping product
@@ -240,13 +213,13 @@ const cardAll = [...document.querySelectorAll('.card')];
 
               </article>
                <div class="container-buy-and-description">
-                 <p class="product-description" data-tab="umum">
+                 <ul class="product-description product-info-list" data-tab="umum">
                  ${product.productDescriptionGeneral}
-                </p>
+                </ul>
                 
-                 <p class="product-description" data-tab="cara-pakai" style="display: none;">
+                 <ol class="product-description  product-steps-list" data-tab="cara-pakai" style="display: none;">
                  ${product.productDescriptionhowToUse}
-                </p>
+                </ol>
 
                
                 <!-- Product Actions -->
@@ -323,13 +296,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
               </article>
                <div class="container-buy-and-description">
-                 <p class="product-description" data-tab="umum">
+                 <ul class="product-description product-info-list" data-tab="umum">
                  ${product.productDescriptionGeneral}
-                </p>
+                </ul>
                 
-                 <p class="product-description" data-tab="cara-pakai" style="display: none;">
+                 <ol class="product-description product-steps-list" data-tab="cara-pakai" style="display: none;">
                  ${product.productDescriptionhowToUse}
-                </p>
+                </ol>
 
                
                 <!-- Product Actions -->
@@ -355,6 +328,38 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 }
 
+
+// Function Untuk perpindahan tab dalam product pilihan
+export const tabProductLogic = () => {
+  const productTab = [...document.querySelectorAll('.product-tab button')];
+  const productTabItem = [...document.querySelectorAll('.product-tab-item')];
+  const allItems = [...document.querySelectorAll('.product-description')];
+
+      console.info(productTab)
+
+
+  // Animasi perpindahan Tab 
+  productTab.forEach(itemTab => {
+    itemTab.addEventListener('click',  () => {
+      const target = itemTab.dataset.tab;
+
+
+      productTab.forEach(other => {
+          if(other.classList.contains('active-tab-product')) !other.classList.remove('active-tab-product');
+          if(!other.classList.contains('active-tab-product'))itemTab.classList.add('active-tab-product');
+      })
+
+      allItems.forEach(item => {
+        if(item.dataset.tab === target) item.style.display = '';
+        else item.style.display = 'none';
+
+    
+  });
+    })
+  });
+
+ 
+}
 
 
 

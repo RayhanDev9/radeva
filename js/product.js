@@ -1,8 +1,13 @@
-import { sendMassageLogic,tabProductLogic,productLoopingLogic,productSelectionLogic,renderProductDetail } from "./function.js";
+import { sendMassageLogic,productLoopingLogic,productSelectionLogic,renderProductDetail,tabProductLogic, } from "./function.js";
 
 productLoopingLogic()
-tabProductLogic()
 
 productSelectionLogic();
 
 renderProductDetail();
+
+
+setTimeout(() => {
+  
+  tabProductLogic()
+}, 300);

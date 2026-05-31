@@ -43,7 +43,7 @@ body {
   transition: opacity 1s ease;
   animation: fadeIn 1s ease;
 
-  padding-top: 120px; /* 80px (navbar) + 40px (jarak antar elemen) */
+  padding-top: 80px; /* 80px (navbar) + 40px (jarak antar elemen) */
   
 }
 
@@ -1000,13 +1000,7 @@ border-radius :10px ;
   
 }
 
-.product-selection-actions a:last-child:hover {
-   box-shadow:
-    0 -4px 8px rgba(0, 0, 0, 0.08), /* atas */
-    4px 0 8px rgba(0, 0, 0, 0.08),  /* kanan */
-    0 4px 8px rgba(0, 0, 0, 0.08),  /* bawah */
-    -4px 0 8px rgba(0, 0, 0, 0.08); /* kiri */
-}
+
 
 .product-selection-actions a:last-child img{
   width: 6rem;
@@ -1016,10 +1010,37 @@ border-radius :10px ;
 }
 
 
+
 .product-description {
   color: var(--primary-text);
 }
 
+
+.product-info-list {
+  list-style-type: none; 
+  padding: 0;            
+  margin: 0;
+}
+
+.product-steps-list {
+  list-style-type: decimal !important; /* Memaksa angka (1, 2, 3) untuk muncul */
+  padding-left: 24px;                  /* Memberikan ruang di kiri agar angka tidak terpotong */
+  margin: 0;
+}
+
+/* Gabungan selector untuk efisiensi kode */
+.product-info-list li, 
+.product-steps-list li {
+  font-size: 16px;         
+  line-height: 1.6;        
+   margin-bottom: 5px;     /*🔥 Sudah diaktifkan kembali agar ada jarak antar poin */
+  /* color: #333333;           */
+}
+
+.product-info-list li strong, 
+.product-steps-list li strong {
+  color: #802424;          /* Warna merah/cokelat gelap untuk teks tebal */
+}
 
 .container-buy-and-description {
   display: flex;
