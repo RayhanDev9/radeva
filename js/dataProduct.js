@@ -1,5 +1,6 @@
 export const dataProduct = [
   {
+    id:1,
      varian : 'Powder',
     title: 'Bedak MBK Powder Sachetan 13,6 gram White',
     price : 6000,
@@ -12,6 +13,7 @@ export const dataProduct = [
    productLink : 'https://id.shp.ee/7q3drsbu',
   },
   {
+    id:2,
     varian : 'Powder',
     title: 'Box 200 gram - bedak deodoran legendaris Varian White',
     price : 36000,
@@ -24,6 +26,7 @@ export const dataProduct = [
    productLink : 'https://id.shp.ee/7q3drsbu',
   },
   {
+    id:3,
      varian : 'Powder',
     title: 'Bedak MBK Powder Sachetan 13,6 gram Varian Silver',
     price : 6000,
@@ -36,6 +39,7 @@ export const dataProduct = [
    productLink : 'https://id.shp.ee/7q3drsbu',
   },
   {
+    id:4,
     varian : 'Powder',
     title: 'Box 200 gram - bedak deodoran legendaris Varian Silver',
     price : 36000,
@@ -49,6 +53,7 @@ export const dataProduct = [
   },
 
   {
+    id:5,
     varian : 'Powder',
     title: 'Bedak Powder MBK Tin 60g - bedak deodoran legendaris Varian White',
     price : 20000,
@@ -61,6 +66,7 @@ export const dataProduct = [
    productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
+      id:6,
     varian : 'Powder',
     title: 'Bedak Powder MBK Tin 60g - bedak deodoran legendaris Varian Silver',
     price : 20000,
@@ -75,6 +81,7 @@ export const dataProduct = [
 
   // Roll
     {
+      id:7,
     varian : 'Roll',
     title: 'MBK Deodorant Roll On Pria dan Wanita 40ml Variant Purple',
     price : 15000,
@@ -87,6 +94,7 @@ export const dataProduct = [
    productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
+      id:8,
     varian : 'Roll',
     title: 'MBK Deodorant Roll On Pria dan Wanita 40ml Variant Grey',
     price : 15000,
@@ -99,6 +107,7 @@ export const dataProduct = [
    productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
+      id:9,
     varian : 'Roll',
     title: 'MBK Deodorant Roll On Pria dan Wanita 40ml Variant Blue',
     price : 15000,
@@ -111,6 +120,7 @@ export const dataProduct = [
    productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
+      id:10,
     varian : 'Roll',
     title: 'MBK Deodorant Roll On Pria dan Wanita 40ml Variant Pink',
     price : 15000,

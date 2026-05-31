@@ -1,4 +1,4 @@
-import { sendMassageLogic,tabProductLogic,productLoopingLogic,productSelectionLogic } from "./function.js";
+import { sendMassageLogic,tabProductLogic,productLoopingLogic,productSelectionLogic,renderProductDetail } from "./function.js";
 
 productLoopingLogic()
 tabProductLogic()
@@ -6,3 +6,5 @@ tabProductLogic()
 productSelectionLogic();
 
 
+
+renderProductDetail();

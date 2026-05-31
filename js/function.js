@@ -92,7 +92,6 @@ export const tabProductLogic = () => {
   const productTab = [...document.querySelectorAll('.product-tab button')];
   const productTabItem = [...document.querySelectorAll('.product-tab-item')];
   const allItems = [...document.querySelectorAll('.product-description')];
-  console.info(productTabItem[0].dataset.tab)
 
   // Animasi perpindahan Tab 
   productTab.forEach(itemTab => {
@@ -125,7 +124,7 @@ export const productLoopingLogic = () => {
 
  dataProduct.forEach(itemProduct => {
   const html = `
-   <article class="card">
+   <article class="card" data-id="${itemProduct.id}">
           <img
             src="${itemProduct.image}"
             alt="${itemProduct.image}"
@@ -166,10 +165,13 @@ export const productLoopingLogic = () => {
 
 // Function untuk perpindahan ke page product.html, sesuai product
 export const movePageProducLogic = () => {
-     const card = [...document.querySelectorAll(".card")];
+     const cards = [...document.querySelectorAll(".card")];
 
-     card.forEach(btn => {
-         btn.addEventListener('click', () => {
+     cards.forEach(card => {
+         card.addEventListener('click', () => {
+          const productId = card.getAttribute('data-id');
+          window.location.href = `product.html?id=${productId}`;
+          
   document.body.classList.add('fade-out');
 
   setTimeout(() => {
@@ -266,6 +268,82 @@ const cardAll = [...document.querySelectorAll('.card')];
 
     console.log(product);
   });
+});
+}
+
+
+// Selection product ketika user memilih di halaman utama
+export const renderProductDetail = () => {
+const nilaiRanomProduct = Math.floor(Math.random() * dataProduct.length)
+document.addEventListener('DOMContentLoaded', () => {
+  const containerProductSelectionBody = document.querySelector('.product-selection-body');
+  const params = new URLSearchParams(window.location.search);
+  const productId= Number(params.get('id')) !== 0 ? Number(params.get('id')) : nilaiRanomProduct ;
+
+  console.info(Math.floor(Math.random() * dataProduct.length))
+   containerProductSelectionBody.innerHTML = '';
+
+
+  const product = dataProduct.find(item => item.id === productId);
+  const html = `
+    <!-- Product Image -->
+              <figure class="product-selection-product-image">
+                <img 
+                  src="${product.image}" 
+                  alt="Product Image"
+                >
+              </figure>
+
+              <!-- Product Content -->
+              <div class="product-selection-product-content">
+
+                <span class="product-category">
+                 ${product.varian}
+                </span>
+
+                <h3 class="product-title">
+                 ${product.title}
+                </h3>
+
+                <p class="product-price">
+                  Rp ${product.price}
+                </p>
+
+              <article class="product-tab">
+               <button class="product-tab-item active-tab-product " data-tab="umum">Umum</button>
+                <button class="product-tab-item" data-tab="cara-pakai">Cara Pakai</button>
+
+              </article>
+               <div class="container-buy-and-description">
+                 <p class="product-description" data-tab="umum">
+                 ${product.productDescriptionGeneral}
+                </p>
+                
+                 <p class="product-description" data-tab="cara-pakai" style="display: none;">
+                 ${product.productDescriptionhowToUse}
+                </p>
+
+               
+                <!-- Product Actions -->
+                <div class="product-selection-actions">
+
+
+                  <a href="" target="_blank">
+                    Buy Now ➜</a>
+
+                  <a  class="btn-shoppe">
+                    <img src="../assets/svg/shoppe.svg" alt="">
+                  </a>
+
+                </div>
+               </div>
+
+              </div>
+  `
+   containerProductSelectionBody.insertAdjacentHTML("beforeend", html);
+
+
+
 });
 }
 
