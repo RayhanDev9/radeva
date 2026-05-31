@@ -7,6 +7,9 @@ export const dataProduct = [
     image : 'assets/img/products/powder/powder-7.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+  productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'Pagi ini langit terlihat cerah meskipun sempat turun hujan semalam.',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
   {
     varian : 'Powder',
@@ -16,6 +19,9 @@ export const dataProduct = [
     image : 'assets/img/products/powder/powder-1.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
   {
      varian : 'Powder',
@@ -25,6 +31,9 @@ export const dataProduct = [
     shippingTime : '< 2-3 hari',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
   {
     varian : 'Powder',
@@ -34,6 +43,9 @@ export const dataProduct = [
     image : 'assets/img/products/powder/powder-8.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
 
   {
@@ -44,6 +56,9 @@ export const dataProduct = [
     image : 'assets/img/products/powder/powder-6.webp',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
     varian : 'Powder',
@@ -53,6 +68,9 @@ export const dataProduct = [
     image : 'assets/img/products/powder/powder-9.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
 
   // Roll
@@ -61,9 +79,12 @@ export const dataProduct = [
     title: 'MBK Deodorant Roll On Pria dan Wanita 40ml Variant Purple',
     price : 15000,
     shippingTime : '< 2-3 hari',
-    image : './assets/img/products/roll/roll-1.png',
+    image : 'assets/img/products/roll/roll-1.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
     varian : 'Roll',
@@ -73,6 +94,9 @@ export const dataProduct = [
     image : 'assets/img/products/roll/roll-2.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
     varian : 'Roll',
@@ -82,6 +106,9 @@ export const dataProduct = [
     image : 'assets/img/products/roll/roll-3.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
     {
     varian : 'Roll',
@@ -91,5 +118,8 @@ export const dataProduct = [
     image : 'assets/img/products/roll/roll-5.png',
    city : 'Kab. Tangerang' ,
    countGoodsSold :'10+ terjual',
+    productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
+   productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
+   productLink : 'https://id.shp.ee/7q3drsbu',
   },
 ]; 
