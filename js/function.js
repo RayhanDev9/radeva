@@ -248,7 +248,7 @@ const cardAll = [...document.querySelectorAll('.card')];
                   <a href="${product.productLink}" target="_blank">
                     Buy Now ➜</a>
 
-                  <a  class="btn-shoppe" href="${product.productLink}">
+                  <a  class="btn-shoppe" href="${product.productLink}" target="_blank">
                     <img src="../assets/svg/shoppe.svg" alt="">
                   </a>
 
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <a  href="${product.productLink}" target="_blank">
                     Buy Now ➜</a>
 
-                  <a  class="btn-shoppe" href="${product.productLink}">
+                  <a  class="btn-shoppe" href="${product.productLink}" target="_blank">
                     <img src="../assets/svg/shoppe.svg" alt="">
                   </a>
 
