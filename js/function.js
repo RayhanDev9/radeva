@@ -217,9 +217,9 @@ const cardAll = [...document.querySelectorAll('.card')];
                  ${product.productDescriptionGeneral}
                 </ul>
                 
-                 <ol class="product-description  product-steps-list" data-tab="cara-pakai" style="display: none;">
+                 <ul class="product-description  product-steps-list" data-tab="cara-pakai" style="display: none;">
                  ${product.productDescriptionhowToUse}
-                </ol>
+                </ul>
 
                
                 <!-- Product Actions -->
@@ -300,9 +300,9 @@ document.addEventListener('DOMContentLoaded', () => {
                  ${product.productDescriptionGeneral}
                 </ul>
                 
-                 <ol class="product-description product-steps-list" data-tab="cara-pakai" style="display: none;">
+                 <ul class="product-description product-steps-list" data-tab="cara-pakai" style="display: none;">
                  ${product.productDescriptionhowToUse}
-                </ol>
+                </ul>
 
                
                 <!-- Product Actions -->

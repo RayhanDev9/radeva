@@ -1162,14 +1162,15 @@ font-size: 0.87em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 1rem;
+  margin-top: 2rem;
   align-content: center;
 }
 
 .partner-logos__item {
   display: grid;
   place-items: center;
-  height: 35px;
+  width: 20rem;
 }
 
 .partner-logos__item img {
@@ -1178,15 +1179,12 @@ font-size: 0.87em;
   width: auto;
   height: auto;
   display: block;
+  border-radius: 5px;
 }
 
 /* Partners responsive */
 
-@media (min-width: 640px) {
-  .partner-logos__item {
-    height: 40px;
-  }
-}
+
 @media (min-width: 768px) {
   section {
     margin: 100px 40px;
@@ -1199,16 +1197,7 @@ font-size: 0.87em;
     padding-bottom: 1.4rem;
   }
 }
-@media (min-width: 1024px) {
-  .partner-logos__item {
-    height: 45px;
-  }
-}
-@media (min-width: 1280px) {
-  .partner-logos__item {
-    height: 55px;
-  }
-}
+
 
 /* =========================
   WHY US SECTION START
