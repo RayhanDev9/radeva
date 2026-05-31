@@ -42,6 +42,8 @@ body {
   opacity: 1;
   transition: opacity 1s ease;
   animation: fadeIn 1s ease;
+
+  padding-top: 120px; /* 80px (navbar) + 40px (jarak antar elemen) */
   
 }
 
@@ -425,7 +427,7 @@ height: auto;
   position: relative;
   width: 100%;
   max-width: 1920px;
-  margin-top: 84.7px;
+  /* margin-top: 84.7px; */
 
 }
 
