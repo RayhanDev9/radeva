@@ -121,6 +121,11 @@ export const tabProductLogic = () => {
 export const productLoopingLogic = () => {
   const containerCardVarianPowder = document.querySelector('.product-varian-powder-container .cards-container');
   const containerCardVarianRoll = document.querySelector('.product-varian-roll-container .cards-container');
+  // const containerBestSeller = document.querySelector('.product-best-seller-container .cards-container');
+  const containerCardBestSeller = document.querySelector('.product-best-seller-container .cards-container');
+  const containerH2BestSeller = document.querySelector('.product-best-seller-container h2');
+
+
 
  dataProduct.forEach(itemProduct => {
   const html = `
@@ -158,7 +163,15 @@ export const productLoopingLogic = () => {
 
   if(itemProduct.varian == 'Powder') containerCardVarianPowder.insertAdjacentHTML("beforeend", html);
   else containerCardVarianRoll.insertAdjacentHTML('beforeend',html)
+  if (itemProduct.bestSeller)   containerCardBestSeller.insertAdjacentHTML("beforeend", html);
+
  });
+
+
+  containerCardBestSeller.classList.add('best-seler');
+  console.info(containerH2BestSeller)
+  // containerH2BestSeller.style.justifyContent = 'center';
+  // containerH2BestSeller.style.width = '100%';
 
 
 }

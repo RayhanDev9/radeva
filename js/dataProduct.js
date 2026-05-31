@@ -11,6 +11,7 @@ export const dataProduct = [
   productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'Pagi ini langit terlihat cerah meskipun sempat turun hujan semalam.',
    productLink : 'https://shopee.co.id/Bedak-MBK-Powder-Sachetan-13-6-gram-Dan-Box-200-gram-bedak-deodoran-legendaris-Varian-Putih-i.1736388240.56660827193?extraParams=%7B%22display_model_id%22%3A272631610843%2C%22model_selection_logic%22%3A2%7D',
+   bestSeller : true,
   },
   {
     id:2,
@@ -64,6 +65,7 @@ export const dataProduct = [
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
    productLink : 'https://shopee.co.id/Bedak-Powder-MBK-Tin-60g-bedak-deodoran-legendaris-Allvarian-i.1736388240.56510721011?extraParams=%7B%22display_model_id%22%3A380937840735%2C%22model_selection_logic%22%3A2%7D',
+   bestSeller : true,
   },
     {
       id:6,
@@ -92,6 +94,7 @@ export const dataProduct = [
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
    productLink : 'https://shopee.co.id/MBK-Deodorant-Roll-On-Pria-dan-Wanita-40ml-Variant-Ungu-i.1736388240.47510781088?extraParams=%7B%22display_model_id%22%3A340940911178%2C%22model_selection_logic%22%3A2%7D',
+
   },
     {
       id:8,
@@ -118,6 +121,7 @@ export const dataProduct = [
     productDescriptionGeneral : 'lorem ipsum ktar yaout litu hejkaha',
    productDescriptionhowToUse : 'lorem ipsum ktar yaout litu hejkaha',
    productLink : 'https://shopee.co.id/MBK-Deodorant-Roll-On-Pria-dan-Wanita-40ml-Variant-Biru-i.1736388240.54160765505?extraParams=%7B%22display_model_id%22%3A405940874229%2C%22model_selection_logic%22%3A2%7D',
+   bestSeller : true,
   },
     {
       id:10,

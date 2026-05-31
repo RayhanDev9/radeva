@@ -543,6 +543,8 @@ height: auto;
   /* margin-top: .2rem; */
   margin-bottom: 2rem;
 }
+
+
 .card {
   margin-inline:auto;
   max-width: 250px;
@@ -691,6 +693,10 @@ grid-template-columns:repeat(3, 250px);
 @media (min-width: 1124px) {
  .cards-container {
 grid-template-columns:repeat(4, 250px);
+;}
+
+.cards-container.best-seler {
+grid-template-columns:repeat(3, 250px);
 ;}
 }
 @media (min-width: 1280px) {
