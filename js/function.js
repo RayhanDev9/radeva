@@ -166,13 +166,16 @@ export const productLoopingLogic = () => {
 
 // Function untuk perpindahan ke page product.html, sesuai product
 export const movePageProducLogic = () => {
-     const btnCard = [...document.querySelectorAll(".card")];
+     const card = [...document.querySelectorAll(".card")];
 
-     btnCard.forEach(btn => {
-      btn.addEventListener('click', () =>{
+     card.forEach(btn => {
+         btn.addEventListener('click', () => {
+  document.body.classList.add('fade-out');
 
-        window.location.href = 'product.html';
-      })
+  setTimeout(() => {
+    window.location.href = 'product.html';
+  }, 300);
+});
      });
 }
 
