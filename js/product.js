@@ -1,4 +1,4 @@
-import { sendMassageLogic,productLoopingLogic,productSelectionLogic,renderProductDetail,tabProductLogic, } from "./function.js";
+import { sendMassageLogic,productLoopingLogic,productSelectionLogic,renderProductDetail,tabProductLogic, animasitionScroll } from "./function.js";
 
 productLoopingLogic()
 
@@ -11,3 +11,5 @@ setTimeout(() => {
   
   tabProductLogic()
 }, 300);
+
+animasitionScroll();

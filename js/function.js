@@ -404,6 +404,27 @@ export const tabProductLogic = () => {
 }
 
 
+export const animasitionScroll = () => {
+ const elementsToAnimate = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    // Jika elemen sudah masuk ke area layar
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active'); // Jalankan animasi
+      
+      // KUNCINYA DI SINI: 
+      // Berhenti mengawasi elemen ini agar animasinya TIDAK MENGULANG lagi saat di-scroll ke atas-bawah
+      observer.unobserve(entry.target); 
+    }
+  });
+}, {
+  threshold: 0.15 
+});
+
+elementsToAnimate.forEach(element => observer.observe(element));
+}
+
 
 
 

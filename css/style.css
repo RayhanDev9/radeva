@@ -42,7 +42,6 @@ body {
   opacity: 1;
   transition: opacity 1s ease;
   animation: fadeIn 1s ease;
-
   padding-top: 80px; /* 80px (navbar) + 40px (jarak antar elemen) */
   
 }
@@ -58,6 +57,19 @@ body.fade-out {
   to {
     opacity: 1;
   }
+}
+/* Keadaan awal: teks transparan dan agak di bawah */
+.reveal {
+  opacity: 0;
+  transform: translateY(45px);
+  transition: all 0.8s ease-out; /* Mengatur kecepatan dan kelembutan animasi */
+}
+
+/* Keadaan setelah beranimasi (ditandai dengan class .active) */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  
 }
 
 html {
@@ -699,6 +711,7 @@ grid-template-columns:repeat(4, 250px);
 
 .cards-container.best-seler {
 grid-template-columns:repeat(3, 250px);
+overflow: hidden;
 ;}
 }
 @media (min-width: 1280px) {

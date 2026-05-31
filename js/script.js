@@ -1,4 +1,4 @@
-import { faqLogic,sendMassageLogic,tabProductLogic,productLoopingLogic,movePageProducLogic } from "./function.js";
+import { faqLogic,sendMassageLogic,tabProductLogic,productLoopingLogic,movePageProducLogic,animasitionScroll } from "./function.js";
 
 sendMassageLogic()
 
@@ -8,4 +8,5 @@ movePageProducLogic();
 
 faqLogic()
 
+animasitionScroll()
 
