@@ -1020,20 +1020,23 @@ border-radius :10px ;
   list-style-type: none; 
   padding: 0;            
   margin: 0;
+  margin-top: 10px;
 }
 
 .product-steps-list {
   list-style-type: decimal !important; /* Memaksa angka (1, 2, 3) untuk muncul */
   padding-left: 24px;                  /* Memberikan ruang di kiri agar angka tidak terpotong */
   margin: 0;
+  margin-top: 10px;
+
 }
 
 /* Gabungan selector untuk efisiensi kode */
 .product-info-list li, 
 .product-steps-list li {
   font-size: 16px;         
-  line-height: 1.6;        
-   margin-bottom: 5px;     /*🔥 Sudah diaktifkan kembali agar ada jarak antar poin */
+  line-height: 1.546;        
+   margin-bottom: 10px;     /*🔥 Sudah diaktifkan kembali agar ada jarak antar poin */
   /* color: #333333;           */
 }
 

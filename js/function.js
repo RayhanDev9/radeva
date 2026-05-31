@@ -1,8 +1,46 @@
 import { dataProduct } from "./dataProduct.js";
+import { dataFAQ} from "./dataFAQ.js";
 
 // Function Untuk Section FAQ
 export const faqLogic = ()=> {
-   const tabItems     = document.querySelectorAll('.tab-item');
+
+  const faqLoopingAccordion = () => {
+const accordion = document.querySelector('.accordion');
+console.info(dataFAQ)
+Object.keys(dataFAQ).forEach(category => {
+ const items = dataFAQ[category]; 
+ const dataCategory = category;
+  
+  items.forEach(faq => {
+   
+
+    const html = `
+       <article class="accordion-item" data-tab="${dataCategory}" style="${dataCategory === 'general' ? '' : 'display: none;'}">
+            <h3>
+              <button class="accordion-header" type="button" aria-expanded="false" aria-controls="faq-halal">
+                <span>${faq.question}</span>
+                <span class="accordion-icon">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+            </h3>
+            <div class="accordion-body" id="faq-halal">
+              <p>${faq.answer}</p>
+            </div>
+          </article>`;
+      
+        accordion.insertAdjacentHTML('beforeend', html);
+  });
+
+
+});
+
+
+}
+
+faqLoopingAccordion()
+ const changeTab = () => {
+  const tabItems     = document.querySelectorAll('.tab-item');
   const sectionTitle = document.getElementById('section-title');
   const allItems     = document.querySelectorAll('.accordion-item');
 
@@ -58,6 +96,10 @@ export const faqLogic = ()=> {
       }
     });
   });
+ }
+
+ changeTab()
+   
 }
 
 // Function Untuk Mengirim pesan
