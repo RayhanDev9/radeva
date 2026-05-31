@@ -1477,6 +1477,67 @@ font-size: 0.87em;
       outline-offset: -2px;
     }
 
+    /* Berlaku untuk resolusi >= 768px (Layar Besar) */
+/* ── Saat Layar Diperbesar (Lebar >= 768px) ── */
+@media (min-width: 768px) {
+  
+  /* Melebarkan batas maksimal container FAQ agar tidak terlalu sempit di desktop */
+  .container-inner-faq {
+    max-width: 650px; /* Diperbesar dari yang awalnya hanya 460px */
+    margin: 0 auto;   /* Memastikan posisi container tetap presisi di tengah layar */
+  }
+
+  /* Memperbesar ukuran heading utama */
+  .section-title {
+    font-size: 24px;  /* Diperbesar dari 20px */
+    margin-bottom: 24px;
+  }
+
+  /* Memperbesar area Tab Navigation agar lebih lega */
+  .tabs {
+    padding: 20px 24px; /* Menambah ruang di dalam tab */
+    gap: 16px;          /* Jarak antar tombol kategori diperlebar */
+    margin-bottom: 36px;
+  }
+
+  /* Memperbesar tombol lingkaran ikon di dalam Tab */
+  .tab-icon {
+    width: 60px;   /* Diperbesar dari 52px */
+    height: 60px;  /* Diperbesar dari 52px */
+  }
+
+  .tab-icon svg {
+    width: 26px;   /* Ukuran icon SVG di dalam lingkaran diperbesar dari 22px */
+    height: 26px;
+  }
+
+  /* Memperbesar teks label di bawah ikon tab */
+  .tab-label {
+    font-size: 13px; /* Diperbesar dari 11.5px */
+    letter-spacing: 0;
+  }
+
+  /* ── Menyesuaikan Ukuran Akordion ── */
+  .accordion-header {
+    padding: 22px 28px; /* Ruang klik tombol pertanyaan jadi lebih luas */
+  }
+
+  .accordion-header span {
+    font-size: 16px; /* Ukuran teks pertanyaan diperbesar dari 14px */
+  }
+
+  .accordion-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .accordion-body p {
+    padding: 0 28px 22px; /* Menyelaraskan padding teks jawaban dengan containernya */
+    font-size: 14.5px;    /* Ukuran teks jawaban diperbesar dari 13.5px */
+  }
+}
+
+
 /* =========================
  PAQ SECTION END
 ========================= */

@@ -1,25 +1,25 @@
-export const faqList = {
+export const dataFAQ = {
   general: [
     {
-      question: 'Apakah Product Pami Halal?',
+      question: 'Apakah Produk Kami Halal?',
       answer: 'Semua produk yang kami jual telah terjamin kehalalannya dan memiliki logo Halal resmi pada kemasan masing-masing produk.'
     },
     {
-      question: 'Cara Melakukan Pesanan?',
-      answer: 'Untuk kenyamanan Anda, kami menyediakan dua metode pemesanan resmi. Anda dapat berbelanja langsung melalui toko kami di Shopee untuk mendapatkan promo gratis ongkir, atau menghubungi Chat Admin jika memerlukan bantuan dan pemesanan manual.'
+      question: 'Bagaimana Cara Melakukan Pesanan?',
+      answer: 'Kami menyediakan dua cara pemesanan resmi: belanja langsung via Shopee untuk menikmati promo gratis ongkir, atau hubungi Chat Admin untuk pemesanan manual dan bantuan'
     } ,
     {
-      question : 'Cara Menjadi Reseller Kami',
-      answer : 'Kami membuka peluang kemitraan bagi Anda yang ingin bergabung sebagai reseller resmi. Proses pendaftaran sangat praktis; Anda hanya perlu menyiapkan dokumen identitas berupa KTP dan NPWP untuk keperluan verifikasi data. Silakan kirimkan dokumen tersebut kepada tim Admin kami untuk mulai melangkah bersama.'
+      question : 'Bagaimana Cara Menjadi Reseller?',
+      answer : 'Buka peluang kemitraan menjadi reseller resmi kami! Caranya praktis, cukup kirimkan foto KTP dan NPWP Anda ke tim Admin untuk proses verifikasi data.'
     },
     {
-      question: 'Ingin Konsultasi Ke TILANSIA',
-      answer : 'Kami siap membantu Anda menemukan produk yang tepat. Silakan lakukan konsultasi gratis melalui WhatsApp di nomor +62 895-3843-9000. Layanan konsultasi kami aktif setiap hari mulai pukul 08:00 hingga 19:00 WIB.'
+      question: 'Bagaimana Cara Konsultasi?',
+      answer : 'Nikmati konsultasi produk gratis melalui WhatsApp di nomor +62 895-3843-9000. Layanan kami tersedia setiap hari pukul 08:00 hingga 19:00 WIB.'
     }
   ],
   order: [{
     question : 'Metode Pembayaran Yang Tersedia ?',
-    answer : 'Demi keamanan dan kenyamanan bertransaksi, kami hanya menerima pembayaran transfer melalui Bank BCA sesuai dengan nomor rekening yang tertera saat pendaftaran/pembelian. Kami tidak bertanggung jawab dan tidak dapat memproses transaksi yang dikirimkan ke nomor rekening di luar akun resmi kami'
+    answer : 'Demi keamanan, kami hanya menerima transfer via Bank BCA resmi yang tertera saat pembelian. Kami tidak bertanggung jawab dan tidak dapat memproses transaksi yang dikirimkan ke rekening di luar akun resmi kami.'
   }
   ],
   shipping : [
@@ -34,7 +34,7 @@ export const faqList = {
   ],
   return : [ {
     question : 'Kebijakan Pengembalian Barang',
-    answer : 'Pengembalian barang atau dana hanya berlaku untuk produk cacat/salah kirim dengan wajib menyertakan video unboxing tanpa terputus maksimal 2 hari setelah paket diterima. Silakan hubungi Admin untuk panduan proses retur.'
+    answer : 'Pengembalian barang atau dana hanya berlaku untuk produk cacat/salah kirim dengan wajib menyertakan video unboxing tanpa terputus maksimal 2 hari setelah paket diterima. Silakan hubungi Admin untuk panduan proses retun.'
   }]
 
 };
