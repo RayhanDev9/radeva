@@ -900,12 +900,19 @@ overflow: hidden;
 /* =========================
    IMAGE
 ======================== */
+.product-selection-product-image {
+
+  display: flex;
+  /* flex: 1; */
+  justify-self: center;
+}
 
 .product-selection-product-image img {
   width: 100%;
   border-radius: 20px;
 
   object-fit:contain;
+
 }
 
 /* =========================
@@ -1064,7 +1071,7 @@ border-radius :10px ;
   width: 6rem;
   display: inline-block;
   border-radius: 5px;
-
+  
 }
 
 
