@@ -413,6 +413,24 @@ export const tabProductLogic = () => {
  
 }
 
+export const humbergerLogoMove = () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  menuToggle.addEventListener('click', () => {
+    document.querySelector('nav').classList.toggle('active-humberger');
+   
+    
+       document.querySelector('.container-logo-global').classList.toggle('none-logo-global');
+    
+
+  })
+
+  document.querySelectorAll('.nav-links li').forEach(navItem => {
+    navItem.addEventListener('click', () => {
+     console.info('ok')
+    })
+  });
+}
+
 
 // Animasi scroll
 export const animasitionScroll = () => {
@@ -490,16 +508,16 @@ containerAnimasiItems.forEach(section => observerContainerAnimationItem.observe(
 }
 animasiItemLogic ();
 
+
+
 // Untuk Product select descripttion
 const animasiDetailProductSelectLogic = () => {
    const containerAnimasiProductsSelect = document.querySelectorAll('.container-buy-and-description');
-   console.info(containerAnimasiProductsSelect)
 const observerContainerAnimationProductSelect = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
 
   const container = entry.target;
-  console.info(container)
 
   const activeList = [...container.querySelectorAll('ul.product-description')]
       .find(el => getComputedStyle(el).display !== 'none');

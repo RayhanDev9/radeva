@@ -1,4 +1,4 @@
-import { faqLogic,sendMassageLogic,tabProductLogic,productLoopingLogic,movePageProducLogic,animasitionScroll } from "./function.js";
+import { faqLogic,sendMassageLogic,tabProductLogic,productLoopingLogic,movePageProducLogic,animasitionScroll,humbergerLogoMove} from "./function.js";
 
 sendMassageLogic()
 
@@ -10,5 +10,6 @@ animasitionScroll()
 
 movePageProducLogic();
 
-document.querySelector('.nav-product').addEventListener('click',animasitionScroll)
+document.querySelector('.nav-product').addEventListener('click',animasitionScroll);
 
+humbergerLogoMove();

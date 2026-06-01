@@ -47,6 +47,7 @@ body {
   animation: fadeIn 1s ease;
   padding-top: 80px; /* 80px (navbar) + 40px (jarak antar elemen) */
   
+  position: relative;
 }
 
 body.fade-out {
@@ -90,6 +91,35 @@ html {
   scroll-behavior: smooth;
 }
 
+.container-logo-global {
+  width: 90vw;
+  position: fixed;
+  z-index: 999;
+  /* display: none; */
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+
+}
+
+.container-logo-global.none-logo-global {
+    transform: translateX(0);
+  opacity: 1;
+  opacity: 1;
+  left: 0%;
+
+
+}
+
+.logo-global {
+  width: 100%;
+  top: 50%;
+  display: inline-block;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
 section {
    scroll-margin-top: 120px;
   margin: 60px 40px;
@@ -122,6 +152,8 @@ button {
   /* z-index: 9; */
 
 }
+
+
 
 
 
@@ -229,6 +261,10 @@ nav{
 
     box-shadow:
     0 4px 16px rgba(0,0,0,.15);
+}
+
+nav.active-humberger {
+  opacity: .98;
 }
 
 /* Logo */
