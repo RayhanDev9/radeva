@@ -14,7 +14,7 @@ export const dataFAQ = {
     },
     {
       question: 'Bagaimana Cara Konsultasi ?',
-      answer : 'Nikmati konsultasi produk gratis melalui WhatsApp di nomor +62 895-3843-9000. Layanan kami tersedia setiap hari pukul 08:00 hingga 19:00 WIB.'
+      answer : 'Nikmati konsultasi produk gratis melalui WhatsApp di nomor +62 895-3843-9000. Layanan kami tersedia senin - jum\'at pukul 08:00 hingga 19:00 WIB.'
     }
   ],
   order: [{
