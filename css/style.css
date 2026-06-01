@@ -94,6 +94,10 @@ html {
 .container-logo-global {
   width: 90vw;
   position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 999;
   /* display: none; */
   transform: translateX(-100%);
@@ -113,11 +117,14 @@ html {
 
 .logo-global {
   width: 100%;
-  top: 50%;
   display: inline-block;
   object-fit: contain;
   margin: 0;
   padding: 0;
+}
+
+main {
+  overflow: hidden;
 }
 
 section {
@@ -1137,6 +1144,8 @@ border-radius :10px ;
 
 .product-description {
   color: var(--primary-text);
+  overflow: hidden;
+
 }
 
 
@@ -1162,6 +1171,7 @@ border-radius :10px ;
   line-height: 1.546;        
    margin-bottom: 10px;     /*🔥 Sudah diaktifkan kembali agar ada jarak antar poin */
   /* color: #333333;           */
+  
 }
 
 .product-info-list li strong, 
