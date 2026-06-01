@@ -19,7 +19,7 @@ export const dataFAQ = {
   ],
   order: [{
     question : 'Metode Pembayaran Yang Tersedia',
-    answer : 'Demi keamanan, kami hanya menerima transfer via Bank BCA resmi yang tertera saat pembelian. Kami tidak bertanggung jawab dan tidak dapat memproses transaksi yang dikirimkan ke rekening di luar akun resmi kami.'
+    answer : 'Demi keamanan transaksi, untuk pembelian offline kami hanya menerima pembayaran melalui rekening resmi Bank BCA yang tertera saat proses pembelian. Untuk pembelian online, silakan melakukan checkout melalui Shopee dan menggunakan metode pembayaran yang tersedia di platform tersebut. <br> Kami tidak bertanggung jawab serta tidak dapat memproses transaksi yang dikirimkan ke rekening atau akun pembayaran di luar yang secara resmi tercantum oleh kami.'
   }
   ],
   shipping : [

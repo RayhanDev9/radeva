@@ -71,7 +71,7 @@ export const dataProduct = [
   <li>
     <strong>4.Perlindungan Harian:</strong> Gunakan secara rutin 1–2 kali sehari untuk menjaga kesegaran tubuh dan bebas bau badan sepanjang hari.
   </li>`,
-   productLink : 'hhttps://shopee.co.id/Bedak-MBK-Powder-Sachetan-13-6-gram-Dan-Box-200-gram-bedak-deodoran-legendaris-Varian-Putih-i.1736388240.56660827193?extraParams=%7B%22display_model_id%22%3A272631610843%2C%22model_selection_logic%22%3A2%7D',
+   productLink : 'https://shopee.co.id/Bedak-MBK-Powder-Sachetan-13-6-gram-Dan-Box-200-gram-bedak-deodoran-legendaris-Varian-Putih-i.1736388240.56660827193?extraParams=%7B%22display_model_id%22%3A272631610843%2C%22model_selection_logic%22%3A2%7D',
   },
   {
     id:3,
