@@ -186,21 +186,18 @@ export const productLoopingLogic = () => {
 
 // Function untuk perpindahan ke page product.html, sesuai product
 export const movePageProducLogic = () => {
-     const cards = [...document.querySelectorAll(".card")];
+     document.addEventListener('click', (e) => {
+  const card = e.target.closest('.card');
+  if (!card) return;
 
-     cards.forEach(card => {
-         card.addEventListener('click', () => {
-          const productId = card.getAttribute('data-id');
-          
+  const productId = card.getAttribute('data-id');
+
   document.body.classList.add('fade-out');
 
   setTimeout(() => {
-     window.location.href = `product.html?id=${productId}`;
+    window.location.href = `product.html?id=${productId}`;
   }, 300);
-
-  animasitionScroll()
 });
-     });
 }
 
 // Untuk bagian product logic saja. Untuk memilih bagian mana yang di selesc user. dan di tampilkan productnya di paling atas
@@ -222,7 +219,7 @@ const cardAll = [...document.querySelectorAll('.card')];
     const titleCard = card.querySelector('.card__title').textContent.trim();
 
     const product = dataProduct.find(
-      item => item.title === titleCard
+    item => item.title === titleCard
     );
 
      const html = `
@@ -373,6 +370,8 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
   `
    containerProductSelectionBody.insertAdjacentHTML("beforeend", html);
+
+   animasitionScroll();
 
 
 

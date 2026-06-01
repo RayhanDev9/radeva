@@ -4,11 +4,11 @@ sendMassageLogic()
 
 productLoopingLogic()
 
-movePageProducLogic();
-
 faqLogic()
 
 animasitionScroll()
+
+movePageProducLogic();
 
 document.querySelector('.nav-product').addEventListener('click',animasitionScroll)
 
