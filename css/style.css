@@ -24,6 +24,8 @@
 
     --radius-lg: 1rem;
     --radius-md: 0.5rem;
+
+    --animation-card : 0.6s;
 }
 
 /* Pengaturan global start */
@@ -61,14 +63,25 @@ body.fade-out {
 /* Keadaan awal: teks transparan dan agak di bawah */
 .reveal {
   opacity: 0;
-  transform: translateY(45px);
+  transform: translateY(40px);
   transition: all 0.8s ease-out; /* Mengatur kecepatan dan kelembutan animasi */
+
+
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Keadaan setelah beranimasi (ditandai dengan class .active) */
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+  
+
   
 }
 
@@ -481,6 +494,7 @@ height: auto;
     "content"
     "vidio";
   gap: 20px;
+    overflow: hidden;
 }
 
 .about-content {
@@ -556,7 +570,12 @@ height: auto;
   margin-block: 1.5rem;
   /* margin-top: .2rem; */
   margin-bottom: 2rem;
+
+    overflow: hidden;
 }
+
+
+
 
 
 .card {
@@ -575,7 +594,33 @@ height: auto;
   position: relative;
   /* padding: 0.5rem 0.3rem 0 0.3rem; */
      border: 1px solid rgba(123, 30, 39, 0.1);
+      opacity: 0;
+  transform: translateY(30px);
+  overflow: hidden;
+
+
 }
+
+.card.activeCard {
+ 
+  animation: fadeUp var(--animation-card) ease forwards;
+    overflow: hidden;
+
+}
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(30px);
+  overflow: hidden;
+  
+}
+
+
+.reveal-item.activeItem {
+  animation: fadeUp var(--animation-card) ease forwards;
+  overflow: hidden;
+}
+
 
 .card:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
@@ -1232,6 +1277,7 @@ font-size: 0.87em;
   gap: 2rem;
 
   margin-top: 3rem;
+    overflow: hidden;
 }
 .why-card {
   /* background-color: #fff; */
@@ -1570,6 +1616,7 @@ font-size: 0.87em;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+    overflow: hidden;
 }
 
 .testimonial-card {
@@ -1757,6 +1804,8 @@ TESTIMONIAL SECTION END
   ;
 
   align-items:center;
+
+    overflow: hidden;
 }
 
 .contact-info  {

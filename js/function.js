@@ -180,6 +180,8 @@ export const productLoopingLogic = () => {
   else containerCardVarianRoll.insertAdjacentHTML('beforeend',html)
   if (itemProduct.bestSeller)   containerCardBestSeller.insertAdjacentHTML("beforeend", html);
 
+   
+
  });
 
 
@@ -216,7 +218,7 @@ const cardAll = [...document.querySelectorAll('.card')];
  }
 //  console.info(cardAll)
 
-  cardAll.forEach(card => {
+  cardAll.forEach((card,i) => {
   card.addEventListener('click', () => {
     containerProductSelectionBody.innerHTML = '';
     const titleCard = card.querySelector('.card__title').textContent.trim();
@@ -227,7 +229,7 @@ const cardAll = [...document.querySelectorAll('.card')];
 
      const html = `
     <!-- Product Image -->
-              <figure class="product-selection-product-image">
+              <figure class="product-selection-product-image reveal-item">
                 <img 
                   src="${product.image}" 
                   alt="Product Image"
@@ -237,15 +239,15 @@ const cardAll = [...document.querySelectorAll('.card')];
               <!-- Product Content -->
               <div class="product-selection-product-content">
 
-                <span class="product-category">
+                <span class="product-category reveal-item">
                  ${product.varian}
                 </span>
 
-                <h3 class="product-title">
+                <h3 class="product-title reveal-item">
                  ${product.title}
                 </h3>
 
-                <p class="product-price">
+                <p class="product-price reveal-item">
                   Rp ${product.price}
                 </p>
 
@@ -282,6 +284,10 @@ const cardAll = [...document.querySelectorAll('.card')];
   `
    containerProductSelectionBody.insertAdjacentHTML("beforeend", html);
 
+
+    
+
+
    scrollToTopOnProductClick()
 
     tabProductLogic()
@@ -291,6 +297,9 @@ const cardAll = [...document.querySelectorAll('.card')];
 
     console.log(product);
   });
+
+  
+
 });
 }
 
@@ -303,7 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
   const productId= Number(params.get('id')) !== 0 ? Number(params.get('id')) : nilaiRanomProduct ;
 
-  console.info(Math.floor(Math.random() * dataProduct.length))
+  console.info(Math.floor(Math.random() * dataProduct.length) - 1)
    containerProductSelectionBody.innerHTML = '';
 
 
@@ -405,8 +414,10 @@ export const tabProductLogic = () => {
 
 
 export const animasitionScroll = () => {
- const elementsToAnimate = document.querySelectorAll('.reveal');
 
+//  Untuk Section
+const animasiSectionLogic = () => {
+ const elementsToAnimate = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     // Jika elemen sudah masuk ke area layar
@@ -422,8 +433,62 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.15 
 });
 
+
 elementsToAnimate.forEach(element => observer.observe(element));
+
 }
+animasiSectionLogic()
+
+// Untuk Card
+const animasiCardsLogic = () => {
+   const containerAnimasiCards= document.querySelectorAll('.container-animasi-cards');
+const observerContainerAnimationCard = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    const cards = entry.target.querySelectorAll('.card');
+
+    cards.forEach((card, i) => {
+      card.style.animationDelay = `${i * 0.15}s`;
+      card.classList.add('activeCard');
+    });
+
+    observerContainerAnimationCard.unobserve(entry.target);
+  });
+}, {
+  threshold: 0.15
+});
+
+containerAnimasiCards.forEach(section => observerContainerAnimationCard.observe(section));
+}
+animasiCardsLogic();
+
+// Untuk Item
+const animasiItemLogic = () => {
+   const containerAnimasiItems = document.querySelectorAll('.container-animasi-items');
+const observerContainerAnimationItem = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    const revealItem = entry.target.querySelectorAll('.reveal-item');
+
+    revealItem.forEach((item, i) => {
+      item.style.animationDelay = `${i * 0.15}s`;
+      item.classList.add('activeItem');
+    });
+
+    observerContainerAnimationItem.unobserve(entry.target);
+  });
+}, {
+  threshold: 0.15
+});
+
+containerAnimasiItems.forEach(section => observerContainerAnimationItem.observe(section));
+
+}
+animasiItemLogic ();
+}
+
 
 
 

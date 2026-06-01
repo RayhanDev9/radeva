@@ -11,3 +11,4 @@ faqLogic()
 animasitionScroll()
 
 document.querySelector('.nav-product').addEventListener('click',animasitionScroll)
+
