@@ -1233,6 +1233,8 @@ font-size: 0.87em;
   gap: 1rem;
   margin-top: 2rem;
   align-content: center;
+    overflow: hidden;
+
 }
 
 .partner-logos__item {
@@ -1284,7 +1286,7 @@ font-size: 0.87em;
   gap: 2rem;
 
   margin-top: 3rem;
-    overflow: hidden;
+  overflow: hidden;
 }
 .why-card {
   /* background-color: #fff; */
@@ -1300,6 +1302,7 @@ font-size: 0.87em;
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
   position: relative;
   border: 1px solid rgba(123, 30, 39, 0.1);
+
 }
 
 
