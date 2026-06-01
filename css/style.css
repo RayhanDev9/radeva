@@ -1973,3 +1973,50 @@ grid-template-columns:
 /* =========================
   FOOTER SECTION END
 ========================= */
+
+
+/* =========================
+ LOGO WA START
+========================= */
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #25D366;
+  border-radius: 50%;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+  z-index: 999;
+   animation: float 2s ease-in-out infinite;
+}
+
+.wa-float img {
+  width: 35px;
+  height: 35px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/* =========================
+  LOGO WA END
+========================= */
+
