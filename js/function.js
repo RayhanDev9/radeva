@@ -216,10 +216,11 @@ const cardAll = [...document.querySelectorAll('.card')];
     behavior: 'smooth'
   });
  }
+ 
 //  console.info(cardAll)
-
   cardAll.forEach((card,i) => {
   card.addEventListener('click', () => {
+    animasitionScroll()
     containerProductSelectionBody.innerHTML = '';
     const titleCard = card.querySelector('.card__title').textContent.trim();
 
@@ -237,7 +238,7 @@ const cardAll = [...document.querySelectorAll('.card')];
               </figure>
 
               <!-- Product Content -->
-              <div class="product-selection-product-content">
+              <div class="product-selection-product-content reveal-item">
 
                 <span class="product-category reveal-item">
                  ${product.varian}
@@ -251,12 +252,12 @@ const cardAll = [...document.querySelectorAll('.card')];
                   Rp ${product.price}
                 </p>
 
-              <article class="product-tab">
+              <article class="product-tab reveal-item">
                <button class="product-tab-item active-tab-product " data-tab="umum">Umum</button>
                 <button class="product-tab-item" data-tab="cara-pakai">Cara Pakai</button>
 
               </article>
-               <div class="container-buy-and-description">
+               <div class="container-buy-and-description reveal-item">
                  <ul class="product-description product-info-list" data-tab="umum">
                  ${product.productDescriptionGeneral}
                 </ul>
