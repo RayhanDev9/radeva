@@ -1,5 +1,6 @@
 import { sendMassageLogic,productLoopingLogic,productSelectionLogic,renderProductDetail,tabProductLogic, animasitionScroll } from "./function.js";
 
+
 productLoopingLogic()
 
 productSelectionLogic();

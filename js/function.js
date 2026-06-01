@@ -197,6 +197,8 @@ export const movePageProducLogic = () => {
   setTimeout(() => {
      window.location.href = `product.html?id=${productId}`;
   }, 300);
+
+  animasitionScroll()
 });
      });
 }
@@ -288,6 +290,7 @@ const cardAll = [...document.querySelectorAll('.card')];
 
     tabProductLogic()
  
+animasitionScroll ();
 
  
 
@@ -297,6 +300,7 @@ const cardAll = [...document.querySelectorAll('.card')];
   
 
 });
+
 }
 
 // Selection product ketika user memilih di halaman utama
@@ -402,6 +406,8 @@ export const tabProductLogic = () => {
 
     
   });
+      animasitionScroll ();
+
     })
   });
 
@@ -484,6 +490,47 @@ containerAnimasiItems.forEach(section => observerContainerAnimationItem.observe(
 
 }
 animasiItemLogic ();
+
+// Untuk Product select descripttion
+const animasiDetailProductSelectLogic = () => {
+   const containerAnimasiProductsSelect = document.querySelectorAll('.container-buy-and-description');
+   console.info(containerAnimasiProductsSelect)
+const observerContainerAnimationProductSelect = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+  const container = entry.target;
+  console.info(container)
+
+  const activeList = [...container.querySelectorAll('ul.product-description')]
+      .find(el => getComputedStyle(el).display !== 'none');
+
+  const itemLi = activeList.querySelectorAll('li');
+
+  let totalDelay = 0;
+
+  itemLi.forEach((item) => {
+  const textLength = item.textContent.length;
+
+  // estimasi waktu baca (40ms per huruf)
+  const readTime = textLength * 0.04;
+  item.style.animationDelay = `${totalDelay}s`;
+  totalDelay += readTime;
+  item.classList.add('show');
+});
+
+    // 1 nilai selalu di tambah. 
+    // 2. panjang waktu sesuai dengan panajgan kata 
+    observerContainerAnimationProductSelect.unobserve(entry.target);
+  });
+}, {
+  threshold: 0.15
+});
+
+containerAnimasiProductsSelect.forEach(section => observerContainerAnimationProductSelect.observe(section));
+
+}
+animasiDetailProductSelectLogic ();
 }
 
 

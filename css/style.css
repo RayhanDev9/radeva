@@ -26,6 +26,7 @@
     --radius-md: 0.5rem;
 
     --animation-card : 0.6s;
+    --animation-detail-product : 0s;
 }
 
 /* Pengaturan global start */
@@ -972,6 +973,28 @@ border-radius :10px ;
   line-height: 1.7;
   color: #555;
 }
+
+.product-description li {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.product-description li.show {
+  animation: fadeUpDescription 0.8s ease forwards;
+}
+
+@keyframes fadeUpDescription {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* =========================
    VARIANT
