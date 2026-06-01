@@ -1297,10 +1297,10 @@ font-size: 0.87em;
 
 .partner-logos {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   align-content: center;
     overflow: hidden;
 
