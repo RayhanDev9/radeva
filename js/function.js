@@ -307,13 +307,14 @@ const cardAll = [...document.querySelectorAll('.card')];
 
 // Selection product ketika user memilih di halaman utama
 export const renderProductDetail = () => {
-const nilaiRanomProduct = Math.floor(Math.random() * dataProduct.length)
+const nilaiRanomProduct = Math.floor(Math.random() * dataProduct.length) ;
 document.addEventListener('DOMContentLoaded', () => {
   const containerProductSelectionBody = document.querySelector('.product-selection-body');
   const params = new URLSearchParams(window.location.search);
-  const productId= Number(params.get('id')) !== 0 ? Number(params.get('id')) : nilaiRanomProduct ;
+  const productId = params.get('id')
+  ? Number(params.get('id'))
+  : nilaiRanomProduct;
 
-  console.info(Math.floor(Math.random() * dataProduct.length) - 1)
    containerProductSelectionBody.innerHTML = '';
 
 
