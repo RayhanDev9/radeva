@@ -115,12 +115,11 @@ export const sendMassageLogic = () => {
     const noWa = document.getElementById('no-wa').value;
     const message = document.getElementById('message').value;
 
-      const text =
-      `Halo, saya ${name}
-      No. WA: ${noWa}
+      const text = `
+Halo, saya ${name}
+No. WA: ${noWa}
 
-       Pesan:
-       ${message}`;
+Pesan: ${message}`;
 
     window.open(
       `https://wa.me/62895384390007?text=${encodeURIComponent(text)}`,
@@ -128,9 +127,6 @@ export const sendMassageLogic = () => {
     );
       });
 }
-
-
-
 
 // Function untuk Looping product
 export const productLoopingLogic = () => {
@@ -302,7 +298,6 @@ const cardAll = [...document.querySelectorAll('.card')];
 
 });
 }
-
 
 // Selection product ketika user memilih di halaman utama
 export const renderProductDetail = () => {
