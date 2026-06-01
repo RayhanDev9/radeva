@@ -195,12 +195,11 @@ export const movePageProducLogic = () => {
      cards.forEach(card => {
          card.addEventListener('click', () => {
           const productId = card.getAttribute('data-id');
-          window.location.href = `product.html?id=${productId}`;
           
   document.body.classList.add('fade-out');
 
   setTimeout(() => {
-    window.location.href = 'product.html';
+     window.location.href = `product.html?id=${productId}`;
   }, 300);
 });
      });
