@@ -466,34 +466,39 @@ export const tabProductLogic = () => {
 
 export const humbergerLogoMove = () => {
   const menuToggle = document.querySelector('.menu-toggle');
+  const checkbox = document.querySelector('#check');
+  const containerLogo = document.querySelector('.container-logo-global-nav');
 
-     const checkbox = document.querySelector('#check');
+  // Pastikan elemen penting ada sebelum memasang event listener (mencegah error di console)
+  if (!menuToggle || !checkbox || !containerLogo) return;
 
+  // 1. Event saat tombol hamburger diklik
   menuToggle.addEventListener('click', () => {
     document.querySelector('nav').classList.toggle('active-humberger');
-   
     
-  
-       document.querySelector('.container-logo-global-nav').classList[checkbox.checked ? 'remove' :'add'  ]('none-logo-global-nav');
-       
-    
-
-  })
-
-  document.querySelectorAll('.nav-links li').forEach(navItem => {
-   // 1. Menghilangkan logo transisi kamu (sesuai kode sebelumnya)
-   navItem.addEventListener('click',  () => {
-      document.querySelector('.container-logo-global-nav').classList[checkbox.checked ? 'remove' :'add'  ]('none-logo-global-nav');
-    
-    // 2. TAMBAHKAN INI: Menutup nav-links dengan men-uncheck checkbox #check
-    if (checkbox) {
-      checkbox.checked = false;
-    }
-    console.info('ok')
-   })
-  
+    // Jika checkbox dicentang (menu mau buka), gunakan 'add'. Jika tidak, 'remove'.
+    const aksi = checkbox.checked ? 'remove' :'add';
+    containerLogo.classList[aksi]('none-logo-global-nav');
   });
-}
+
+  // 2. Event saat salah satu list menu (link) diklik
+  document.querySelectorAll('.nav-links li').forEach(navItem => {
+    navItem.addEventListener('click', () => {
+      const lebarLayar = window.innerWidth;
+
+      // Hanya jalankan transisi logo jika pengguna berada di layar mobile
+      if (lebarLayar <= 768) {
+        // Karena menu akan menutup, kita paksa transisinya berjalan (sesuaikan dengan flow CSS kamu)
+        containerLogo.classList.add('none-logo-global-nav');
+      }
+      
+      // Tutup menu hamburger dengan mengubah status checkbox menjadi false
+      checkbox.checked = false;
+      
+      console.info('Navigation item clicked, menu closed.');
+    });
+  });
+};
 
 
 // Animasi scroll
