@@ -596,7 +596,7 @@ const observerContainerAnimationProductSelect = new IntersectionObserver((entrie
 
   const itemLi = activeList.querySelectorAll('li');
 
-  let totalDelay = 2.7;
+  let totalDelay = 0;
 
   itemLi.forEach((item) => {
   const textLength = item.textContent.length;
