@@ -466,19 +466,32 @@ export const tabProductLogic = () => {
 
 export const humbergerLogoMove = () => {
   const menuToggle = document.querySelector('.menu-toggle');
+
+     const checkbox = document.querySelector('#check');
+
   menuToggle.addEventListener('click', () => {
     document.querySelector('nav').classList.toggle('active-humberger');
    
     
-       document.querySelector('.container-logo-global').classList.toggle('none-logo-global');
+  
+       document.querySelector('.container-logo-global-nav').classList[checkbox.checked ? 'remove' :'add'  ]('none-logo-global-nav');
+       
     
 
   })
 
   document.querySelectorAll('.nav-links li').forEach(navItem => {
-    navItem.addEventListener('click', () => {
-     console.info('ok')
-    })
+   // 1. Menghilangkan logo transisi kamu (sesuai kode sebelumnya)
+   navItem.addEventListener('click',  () => {
+      document.querySelector('.container-logo-global-nav').classList[checkbox.checked ? 'remove' :'add'  ]('none-logo-global-nav');
+    
+    // 2. TAMBAHKAN INI: Menutup nav-links dengan men-uncheck checkbox #check
+    if (checkbox) {
+      checkbox.checked = false;
+    }
+    console.info('ok')
+   })
+  
   });
 }
 
