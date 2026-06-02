@@ -1,4 +1,4 @@
-import { sendMassageLogic,productLoopingLogic,productSelectionLogic,renderProductDetail,tabProductLogic, animasitionScroll,humbergerLogoMove } from "./function.js";
+import { sendMassageLogic,productLoopingLogic,productSelectionLogic,renderProductDetail,tabProductLogic, animasitionScroll,humbergerLogoMove, } from "./function.js";
 
 
 productLoopingLogic()

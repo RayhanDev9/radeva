@@ -92,18 +92,121 @@ html {
 }
 
 .container-logo-global {
-  width: 90vw;
+ width: 100vw;
+  height: 100vh;
   position: fixed;
   inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
-  /* display: none; */
+  background: white;
+  z-index: 99;
+
   transform: translateX(-100%);
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
 
+}
+
+.container-logo-loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  z-index: 9999;
+
+  animation: masukMuterKeluar 2.7s ease-in-out forwards;
+}
+
+/* wrapper */
+.loader-ring {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* logo diam di tengah */
+.logo-global-load {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* SPINNER RING */
+.loader-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  border-right: 3px solid #999;
+
+  animation: spin 1s linear infinite;
+
+  /* glow / shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin:  .3rem;
+
+}
+
+/* animasi muter */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes masukMuterKeluar {
+  /* FASE 1: Masuk dari kanan secara perlahan (0% sampai 25%) */
+  0% {
+    transform: translateX(100vw) rotate(0deg);
+  }
+  25% {
+    transform: translateX(0) rotate(360deg); /* Tiba di tengah */
+  }
+
+  /* FASE 2: Diam di tengah untuk loading (25% sampai 75%) */
+  75% {
+    transform: translateX(0) rotate(360deg); /* Tetap di tengah */
+  }
+
+  /* FASE 3: Keluar ke kiri secara perlahan (75% sampai 100%) */
+  100% {
+    transform: translateX(-100vw) rotate(0deg); /* Sampai di luar layar kiri */
+  }
+}
+@keyframes masukMuterKeluar {
+  /* FASE 1: Masuk dari kanan secara perlahan (0% sampai 25%) */
+  0% {
+    transform: translateX(100vw) ;
+  }
+  25% {
+    transform: translateX(0) ; /* Tiba di tengah */
+  }
+
+  /* FASE 2: Diam di tengah untuk loading (25% sampai 75%) */
+  75% {
+    transform: translateX(0) ; /* Tetap di tengah */
+  }
+
+  /* FASE 3: Keluar ke kiri secara perlahan (75% sampai 100%) */
+  100% {
+    transform: translateX(-100vw) ; /* Sampai di luar layar kiri */
+  }
 }
 
 .container-logo-global.none-logo-global {
@@ -411,7 +514,7 @@ height: auto;
         justify-content:center;
         align-items:center;
 
-        transition:.4s ease;
+        transition:1s ease;
 
         z-index:1001;
     }

@@ -1,6 +1,57 @@
 import { dataProduct } from "./dataProduct.js";
 import { dataFAQ} from "./dataFAQ.js";
 
+
+//
+export const animasiLoadingPage = () => {
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".container-logo-loading");
+
+    const content = document.querySelector("main");
+    const nav = document.querySelector("nav");
+    const footer = document.querySelector("footer");
+    const waFloat = document.querySelector(".wa-float");
+    const scrollProgress = document.querySelector(".scroll-progress");
+
+    const elements = [content, nav, footer, waFloat, scrollProgress];
+
+    // safety check
+    if (!loader || !content) return;
+
+    // STEP 1: sembunyikan content
+    elements.forEach(el => {
+      if (el) el.style.opacity = "0";
+    });
+
+    // nav.style.opacity = '1'
+
+    // STEP 2: tampilkan loader
+    loader.style.opacity = "1";
+
+    // optional delay biar terasa loading
+    setTimeout(() => {
+
+      // STEP 3: fade out loader
+      loader.style.transition = "0.6s ease";
+      loader.style.opacity = "0";
+
+      // STEP 4: tampilkan content
+      setTimeout(() => {
+        loader.style.display = "none";
+
+        elements.forEach(el => {
+          if (el) {
+            el.style.transition = "0.8s ease";
+            el.style.opacity = "1";
+          }
+        });
+
+      }, 600);
+
+    }, 2700); // durasi loader tampil
+  });
+};
+
 // Function Untuk Section FAQ
 export const faqLogic = ()=> {
 
