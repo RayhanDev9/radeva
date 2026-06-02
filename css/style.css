@@ -91,48 +91,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.container-logo-global-nav {
- width: 100vw;
-  height: 100vh;
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  z-index: 99;
-
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: transform 1s ease, opacity 1s ease;
-
-}
-
-.container-logo-global-nav.none-logo-global-nav {
-    transform: translateX(0);
-  opacity: 1;
-  opacity: 1;
-  left: 0%;
-
-
-}
-
-.container-logo-global-nav.none-logo-global-nav {
-    transform: translateX(0);
-  opacity: 1;
-  opacity: 1;
-  left: 0%;
-
-
-}
-
-.logo-global-nav {
-  width: 100%;
-  display: inline-block;
-  object-fit: contain;
-  margin: 0;
-  padding: 0;
-}
 
 
 /* Animasi Loading */
@@ -347,6 +305,50 @@ button:hover {
    NAVBAR start
 ========================= */
 
+
+.container-logo-global-nav {
+ width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  z-index: 99;
+
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+
+}
+
+.container-logo-global-nav.none-logo-global-nav {
+    transform: translateX(0);
+  opacity: 1;
+  opacity: 1;
+  left: 0%;
+
+
+}
+
+.container-logo-global-nav.none-logo-global-nav {
+    transform: translateX(0);
+  opacity: 1;
+  opacity: 1;
+  left: 0%;
+
+
+}
+
+.logo-global-nav {
+  width: 100%;
+  display: inline-block;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
 nav{
     display:flex;
     justify-content:space-between;
@@ -452,6 +454,10 @@ height: auto;
     display:none;
 }
 
+.logo-global-nav {
+  display: none;
+}
+
 .menu-toggle{
     display:none;
 
@@ -480,6 +486,9 @@ height: auto;
 ========================= */
 
 @media (max-width:768px){
+  .logo-global-nav {
+  display: block;
+}
 
   nav {
     padding:.75rem 4.66%;
