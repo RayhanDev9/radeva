@@ -13,6 +13,8 @@ export const animasiLoadingPage = () => {
     const waFloat = document.querySelector(".wa-float");
     const scrollProgress = document.querySelector(".scroll-progress");
 
+    const durasi = innerWidth <= 678 ? 1700 : 2700;
+
     const elements = [content, nav, footer, waFloat, scrollProgress];
 
     // safety check
@@ -48,7 +50,7 @@ export const animasiLoadingPage = () => {
 
       }, 600);
 
-    }, 2700); // durasi loader tampil
+    }, durasi); // durasi loader tampil
   });
 };
 

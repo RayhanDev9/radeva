@@ -109,6 +109,13 @@ html {
   animation: masukMuterKeluar 2.7s ease-in-out forwards;
 }
 
+@media (max-width: 768px) {
+ .container-logo-loading {
+
+  animation: masukMuterKeluar 1.7s ease-in-out forwards;
+}
+}
+
 
 
 /* wrapper */
