@@ -486,10 +486,13 @@ export const humbergerLogoMove = () => {
     navItem.addEventListener('click', () => {
       const lebarLayar = window.innerWidth;
 
+
       // Hanya jalankan transisi logo jika pengguna berada di layar mobile
       if (lebarLayar <= 768) {
         // Karena menu akan menutup, kita paksa transisinya berjalan (sesuaikan dengan flow CSS kamu)
-        containerLogo.classList.add('none-logo-global-nav');
+        const aksi = checkbox.checked ? 'remove' :'add';
+       containerLogo.classList[aksi]('none-logo-global-nav');
+
       }
       
       // Tutup menu hamburger dengan mengubah status checkbox menjadi false
@@ -593,7 +596,7 @@ const observerContainerAnimationProductSelect = new IntersectionObserver((entrie
 
   const itemLi = activeList.querySelectorAll('li');
 
-  let totalDelay = 0;
+  let totalDelay = 2.7;
 
   itemLi.forEach((item) => {
   const textLength = item.textContent.length;
