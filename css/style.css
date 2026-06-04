@@ -615,6 +615,7 @@ height: auto;
   width: 100%;
   max-width: 1920px;
   /* margin-top: 84.7px; */
+    margin-top: .31rem;
 
 }
 
@@ -637,17 +638,6 @@ height: auto;
   border: none;
   /* border-radius: 20px; */
   letter-spacing: 0.1px;
-}
-
-@media (max-width : 768px) {
-  .hero-section {
-    margin-top: .3rem;
-  }
-}
-@media (min-width : 768px) {
-  .hero-section {
-    margin-top: .3rem;
-  }
 }
 
 
