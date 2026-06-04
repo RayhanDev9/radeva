@@ -29,13 +29,17 @@
     --animation-detail-product : 0s;
 }
 
-/* Pengaturan global start */
+/* RISET */
 *,*::before, *::after  {
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
+
+/* =========================
+   GLOBAL SETTING START
+========================= */
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -54,6 +58,12 @@ body.fade-out {
   opacity: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ANIMASI BODY */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -62,15 +72,16 @@ body.fade-out {
     opacity: 1;
   }
 }
-/* Keadaan awal: teks transparan dan agak di bawah */
+
+/* ANIMASI GLOBAL START */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(4
+  0px);
   transition: all 0.8s ease-out; /* Mengatur kecepatan dan kelembutan animasi */
 
 
 }
-
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -87,13 +98,11 @@ body.fade-out {
   
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* ANIMASI GLOBAL END */
 
 
 
-/* Animasi Loading */
+/* ANIMASI LOADING START */
 
 .container-logo-loading {
   width: 100vw;
@@ -167,7 +176,7 @@ html {
 }
 
 @keyframes masukMuterKeluar {
-  /* FASE 1: Masuk dari kanan secara perlahan (0% sampai 25%) */
+  /* FASE 1: Masuk dari @ secara perlahan (0% sampai 25%) */
   0% {
     transform: translateX(100vw) ;
   }
@@ -185,6 +194,9 @@ html {
     transform: translateX(-100vw) ; /* Sampai di luar layar kiri */
   }
 }
+
+/* ANIMASI LOADING END*/
+
 
 
 
@@ -306,10 +318,12 @@ button:hover {
   }
 }
 
-/* Pengaturan global end */
+/* =========================
+   GLOBAL SETTING END
+========================= */
 
 /* =========================
-   NAVBAR start
+   NAVBAR START
 ========================= */
 
 
@@ -737,10 +751,6 @@ height: auto;
     overflow: hidden;
 }
 
-
-
-
-
 .card {
   margin-inline:auto;
   max-width: 250px;
@@ -777,7 +787,6 @@ height: auto;
   overflow: hidden;
   
 }
-
 
 .reveal-item.activeItem {
   animation: fadeUp var(--animation-card) ease forwards;
@@ -821,7 +830,6 @@ height: auto;
 
 }
 
-
 .card__title {
   font-size: .8em;
   font-weight: 700;
@@ -838,13 +846,11 @@ justify-content: space-between;
   font-size: 1.2em;
 }
 
-
 .card__sold {
  font-size: .65em;
  align-self: center;
  font-weight: 500;
 }
-
 
 .card__estimate__svg  {
 display: inline-block;
@@ -866,8 +872,6 @@ display: inline-block;
   gap: 12px;
   text-align: center;
 }
-
-
 
 .card__estimate__text, 
 .card__location {
@@ -1088,12 +1092,6 @@ overflow: hidden;
   gap: 16px;
 }
 
-.product-category {
-  /* /* font-size: 13px;
-  font-weight: 600; */
-
-  
-}
 
 .product-title {
   /* font-size: 1rem; */
@@ -1105,7 +1103,7 @@ overflow: hidden;
    font-size: 1.4rem;
   /* font-weight: 700; */
 
-  /* color: #7c3aed; */ */
+  /* color: #7c3aed; */ 
 }
 
 .product-tab {
@@ -1331,13 +1329,6 @@ border-radius :20px ;
 
 }
 
-.product-description {
-    /* kira-kira 3 baris */
-  /* overflow-y: auto;    */
-
-}
-
-
 
 }
 
@@ -1362,7 +1353,7 @@ border-radius :20px ;
    font-size: 1.7rem;
   /* font-weight: 700; */
 
-  /* color: #7c3aed; */ */
+  /* color: #7c3aed; */ 
 }
 
 .product-tab button{
@@ -1530,9 +1521,7 @@ font-size: 0.87em;
   WHY US SECTION END
 ========================= */
 
-/* =========================
-  TESTIMONIAL SECTION START
-========================= */
+
 
 
 /* =========================
@@ -1800,6 +1789,10 @@ font-size: 0.87em;
 
 /* =========================
  PAQ SECTION END
+========================= */
+
+/* =========================
+  TESTIMONIAL SECTION START
 ========================= */
 
 
