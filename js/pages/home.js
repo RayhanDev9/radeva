@@ -13,5 +13,3 @@ movePageProducLogic();
 document
   .querySelector(".nav-product")
   ?.addEventListener("click", movePageProducLogic);
-
-  console.info('ok')

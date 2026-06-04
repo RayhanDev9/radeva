@@ -13,5 +13,3 @@ productLoopingLogic();
 humbergerLogoMove();
 
 animasitionScroll();
-
-console.log("main jalan");
