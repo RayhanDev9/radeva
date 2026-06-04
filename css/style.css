@@ -639,6 +639,17 @@ height: auto;
   letter-spacing: 0.1px;
 }
 
+@media (max-width : 768px) {
+  .hero-section {
+    margin-top: .3rem;
+  }
+}
+@media (min-width : 768px) {
+  .hero-section {
+    margin-top: .3rem;
+  }
+}
+
 
 /* =========================
    HERO SECTION END
