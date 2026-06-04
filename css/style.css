@@ -601,13 +601,18 @@ nav.active-humberger {
 
   aspect-ratio: 16/9;
   object-fit: cover;       /* KUNCI UTAMA: Gambar dipotong proporsional, gak bakal melar */
-    object-position: left; /* Memastikan bagian tengah gambar tetap kelihatan */
+  object-position: 7% center; /* geser sedikit ke kiri */
 
 }
 
 @media (max-width: 768px) {
   .hero-section-img {
     aspect-ratio: 10 / 9;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section-img {
+    aspect-ratio: 12 / 13;
   }
 }
 
