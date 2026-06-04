@@ -1,0 +1,40 @@
+/* =========================
+   PARTNERS.CSS
+   Isi: Partner logos section
+========================= */
+
+.patners-section {
+  margin: 0;
+  padding: 60px 10px;
+  background-color: var(--primary-bg);
+  padding-block-end: 100px;
+}
+
+.patners-section h2 {
+  text-align: center;
+  padding: 1.6rem 0rem 1rem 0rem;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  align-content: center;
+  overflow: hidden;
+}
+
+.partner-logos__item {
+  display: grid;
+  place-items: center;
+  width: 20rem;
+}
+
+.partner-logos__item img {
+  max-width: 100px;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}

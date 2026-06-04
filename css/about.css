@@ -1,0 +1,42 @@
+/* =========================
+   ABOUT.CSS
+   Isi: About section
+========================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "content"
+    "vidio";
+  gap: 20px;
+  overflow: hidden;
+}
+
+.about-content {
+  grid-area: content;
+  padding: 0px 10px;
+}
+
+.about-video {
+  grid-area: vidio;
+  max-width: 920px;
+}
+
+.about-video video {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+@media (min-width: 1024px) {
+  .about-content {
+    padding: 0px 3rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "content vidio";
+  }
+}

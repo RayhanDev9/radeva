@@ -1,0 +1,45 @@
+/* =========================
+   WHY-US.CSS
+   Isi: Why us section
+========================= */
+
+.why-us-section h2 {
+  text-align: center;
+}
+
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.why-card {
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s ease;
+  position: relative;
+  border: 1px solid rgba(123, 30, 39, 0.1);
+}
+
+.svg {
+  width: 32px;
+  height: 32px;
+  color: var(--accent);
+  fill: var(--accent);
+}
+
+@media (min-width: 1024px) {
+  .why-card::before {
+    content: "";
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    height: 2.3px;
+    background-color: var(--accent);
+    z-index: 99;
+  }
+}

@@ -1,0 +1,103 @@
+/* =========================
+   CONTACT.CSS
+   Isi: Contact section
+========================= */
+
+.contact-section {
+  padding: 5rem 1rem;
+  margin: 0;
+  background: var(--primary-bg);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  grid-template-areas:
+    "info"
+    "form";
+  align-items: center;
+  overflow: hidden;
+}
+
+.contact-info {
+  grid-area: info;
+  padding-inline: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+  color: #8b2434;
+}
+
+.contact-description {
+  margin-bottom: 0.5rem;
+}
+
+.contact-item span {
+  color: var(--primary-text);
+  font-size: 1.1rem;
+}
+
+.contact-item span a {
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: var(--primary-text);
+}
+
+.contact-form {
+  background: var(--primary-bg);
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  grid-area: form;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background: #ffff;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form button {
+  z-index: 99;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    grid-template-areas: "info form";
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    align-self: center;
+  }
+}

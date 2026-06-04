@@ -1,0 +1,63 @@
+/* =========================
+   TESTIMONIAL.CSS
+   Isi: Testimonial section
+========================= */
+
+.testimonial-section {
+  margin: 100px 40px;
+}
+
+.container-testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  max-width: 380px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 1px solid rgba(123, 30, 39, 0.1);
+  transition: all 0.3s ease;
+}
+
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-profile img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  margin-bottom: 4px;
+}
+
+.profile-info span {
+  font-size: 0.9rem;
+  color: var(--primary-text);
+}
+
+.testimonial-rating {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.testimonial-text {
+  line-height: 1.7;
+}

@@ -1,0 +1,245 @@
+/* =========================
+   BASE.CSS
+   Isi: :root, reset, global (body, h2, p, button), animasi loading & reveal
+========================= */
+
+/* ROOT */
+:root {
+  --primary-bg: #f7f1e8;
+  --secondary-bg: #efe6d7;
+  --accent: #7b1e28;
+
+  --primary-text: #6b0f1a;
+  --secondary-text: #fff;
+  --text-dark: rgb(6, 5, 5);
+
+  --bg: #f7f1e8;
+  --white: #ffffff;
+  --border: #ede8f0;
+  --text: #1a0a0e;
+  --text-muted: #9e8fa0;
+  --purple: #7b1e28;
+  --purple-light: #f5e8ea;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  --radius-lg: 1rem;
+  --radius-md: 0.5rem;
+
+  --animation-card: 0.6s;
+  --animation-detail-product: 0s;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--primary-text);
+  opacity: 1;
+  transition: opacity 1s ease;
+  animation: fadeIn 1s ease;
+  padding-top: 80px;
+  position: relative;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+main {
+  overflow: hidden;
+}
+
+/* GLOBAL TYPOGRAPHY */
+h2 {
+  font-weight: 700;
+  opacity: 0.9;
+  letter-spacing: 0.4px;
+  padding-bottom: 1rem;
+  font-size: 1.6em;
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.256;
+  font-size: 0.85em;
+}
+
+/* GLOBAL BUTTON */
+button {
+  background-color: var(--accent);
+  color: var(--secondary-text);
+  font-weight: 600;
+  padding: 5px 7px;
+  font-size: 0.856rem;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #5f1620;
+  box-shadow: 0 10px 20px rgba(139, 36, 52, 0.35);
+}
+
+/* GLOBAL SECTION */
+section {
+  scroll-margin-top: 120px;
+  margin: 60px 40px;
+}
+
+/* =========================
+   ANIMASI GLOBAL
+========================= */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(30px);
+  overflow: hidden;
+}
+
+.reveal-item.activeItem {
+  animation: fadeUp var(--animation-card) ease forwards;
+  overflow: hidden;
+}
+
+/* =========================
+   ANIMASI LOADING
+========================= */
+
+.container-logo-loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  z-index: 9999;
+  animation: masukMuterKeluar 2.7s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+  .container-logo-loading {
+    animation: masukMuterKeluar 1.7s ease-in-out forwards;
+  }
+}
+
+.loader-ring {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-global-load {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.loader-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  border-right: 3px solid #999;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0.3rem;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes masukMuterKeluar {
+  0%   { transform: translateX(100vw); }
+  25%  { transform: translateX(0); }
+  75%  { transform: translateX(0); }
+  100% { transform: translateX(-100vw); }
+}
+
+/* =========================
+   GLOBAL RESPONSIVE
+========================= */
+
+@media (min-width: 640px) {
+  section  { margin: 80px 40px; }
+  p        { font-size: 0.9em; }
+  h2       { font-size: 2em; padding-bottom: 1.2rem; }
+  button   { font-size: 0.94rem; }
+}
+
+@media (min-width: 768px) {
+  section  { margin: 100px 40px; }
+  p        { font-size: 1em; }
+  h2       { font-size: 2.2em; padding-bottom: 1.4rem; }
+  button   { font-size: 1.14rem; }
+}
+
+@media (min-width: 1024px) {
+  section  { margin: 120px 40px; }
+  p        { font-size: 1.2em; }
+  h2       { font-size: 2.4em; padding-bottom: 1.6rem; }
+  button   { font-size: 1.28rem; padding: 8px 10px; }
+}
+
+@media (min-width: 1280px) {
+  section  { margin: 140px 40px; }
+  p        { font-size: 1.3em; }
+  h2       { font-size: 2.7em; padding-bottom: 1.8rem; }
+  button   { font-size: 1.35rem; }
+}
+
+@media (min-width: 1400px) {
+  button   { font-size: 1.6rem; padding: 8px 10px; }
+}

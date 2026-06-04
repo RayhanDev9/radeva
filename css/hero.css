@@ -1,0 +1,33 @@
+/* =========================
+   HERO.CSS
+   Isi: Hero section
+========================= */
+
+.hero-section {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin-top: 0.31rem;
+}
+
+.hero-section-img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: 7% center;
+}
+
+@media (max-width: 768px) {
+  .hero-section-img {
+    aspect-ratio: 10 / 9;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-section-img {
+    aspect-ratio: 12 / 13;
+  }
+}

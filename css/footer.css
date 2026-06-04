@@ -1,0 +1,99 @@
+/* =========================
+   FOOTER.CSS
+   Isi: Footer + WA float button
+========================= */
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #1d1d1d;
+  padding: 4rem 1rem 2rem;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box ul li {
+  margin-bottom: 1rem;
+  color: #d6d6d6;
+  line-height: 1.7;
+}
+
+.footer-box a {
+  color: #d6d6d6;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-box a:hover,
+.footer-box li:hover {
+  color: yellow;
+}
+
+.footer-bottom {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  text-align: center;
+}
+
+.footer-bottom h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom p {
+  color: #c7c7c7;
+  line-height: 1.8;
+}
+
+/* =========================
+   WA FLOAT BUTTON
+========================= */
+
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: float 2s ease-in-out infinite;
+}
+
+.wa-float img {
+  width: 35px;
+  height: 35px;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
